@@ -6,10 +6,19 @@ class MenuItem extends React.Component {
     render() {
         return (
             <button className={this.getClass()}>
-                {this.props.isTweetButton ? <></> : <object data={this.props.icon} className="button-icon"/>}
+                {this.getButtonIcon()}
                 <label className="button-label">{this.props.label}</label>
             </button>
         );
+    }
+
+    getButtonIcon() {
+        return <>
+            {this.props.isTweetButton ? <></> :
+                (this.props.isProfileButton ?
+                    <img src={this.props.icon} className="button-icon profile-img" alt="profile image"/> :
+                    <object data={this.props.icon} className="button-icon"/>)}
+        </>;
     }
 
     getClass = () => {
@@ -20,11 +29,13 @@ class MenuItem extends React.Component {
 MenuItem.propTypes = {
     label: propTypes.string.isRequired,
     icon: propTypes.string,
-    isTweetButton: propTypes.bool
+    isTweetButton: propTypes.bool,
+    isProfileButton: propTypes.bool
 };
 
 MenuItem.defaultProps = {
-    isTweetButton: false
+    isTweetButton: false,
+    isProfileButton: false
 };
 
 export default MenuItem;

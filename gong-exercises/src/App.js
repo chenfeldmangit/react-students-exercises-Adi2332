@@ -8,6 +8,8 @@ function App() {
   return (
     <div className="App">
       <Menu/>
+      <div id="stream"/>
+      <div id="follow"/>
     </div>
   );
 }
