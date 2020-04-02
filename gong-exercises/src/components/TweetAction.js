@@ -1,12 +1,11 @@
 import * as React from "react";
 import propTypes from "prop-types";
-import MenuItem from "./MenuItem";
 
 
 class TweetAction extends React.Component {
 
     render() {
-        return <button className="tweet-action">
+        return <button className={"tweet-action " + this.props.class} onClick={this.props.action}>
             <object data={this.props.icon}/>
         </button>;
     }
@@ -14,8 +13,12 @@ class TweetAction extends React.Component {
 
 
 TweetAction.propTypes = {
-    icon: propTypes.string.isRequired
+    icon: propTypes.string.isRequired,
+    class: propTypes.string
 };
 
+TweetAction.defaultProps = {
+    class: ""
+};
 
 export default TweetAction;

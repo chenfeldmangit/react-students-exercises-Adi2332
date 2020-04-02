@@ -61,7 +61,7 @@
 #stream #writeTweet .tweet-title {
   font-weight: bold;
 }
-#stream #writeTweet #writeTweet-text {
+#stream #writeTweet #writeTweetText {
   width: 98%;
 }
 #stream #writeTweet .tweet-actions {
