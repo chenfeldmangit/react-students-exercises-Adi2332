@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="59acea2d-91f2-4d4d-bebe-dbbe998a7756" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/addLocation.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/addPhoto.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/add_img.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/bell.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/bin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/bird.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/bookmark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/close.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/comment.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/hashtag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/joinOn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/left-arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/like.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/location.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/mail.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/more.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/share.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/smile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/video.mkv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/yoyogi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/src/components/MenuItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-students-exercises-Adi2332.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/App.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1ZyfOt2jzMdGKu9xQ75PPNDrY5h" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Adi\IdeaProjects\react-students-exercises-Adi2332\gong-exercises\src" />
+      <recent name="C:\Users\Adi\IdeaProjects\react-students-exercises-Adi2332\gong-exercises" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Adi\IdeaProjects" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59acea2d-91f2-4d4d-bebe-dbbe998a7756" name="Default Changelist" comment="" />
+      <created>1585816225293</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585816225293</updated>
+      <workItem from="1585816228405" duration="1634000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="667" y="276" width="586" height="488" key="find.popup" timestamp="1585817329628">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="276" width="586" height="488" key="find.popup/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585817329628" />
+  </component>
+</project>
