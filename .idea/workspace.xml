@@ -2,42 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59acea2d-91f2-4d4d-bebe-dbbe998a7756" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/addLocation.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/addPhoto.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/add_img.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/bell.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/bin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/bird.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/bookmark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/close.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/comment.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/hashtag.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/home.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/joinOn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/left-arrow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/like.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/list.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/location.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/mail.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/more.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/profile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/share.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/smile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/video.mkv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/resources/yoyogi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Adi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/src/Style/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/src/Style/css/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/src/Style/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/src/components/Menu.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/gong-exercises/src/components/MenuItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react-students-exercises-Adi2332.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/addLocation.svg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/addLocation.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/addPhoto.svg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/addPhoto.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/add_img.svg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/add_img.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/bell.svg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/bell.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/bin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/bin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/bird.svg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/bird.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/bookmark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/bookmark.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/close.svg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/close.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/comment.svg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/comment.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/hashtag.svg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/hashtag.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/home.svg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/home.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/img.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/img.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/joinOn.svg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/joinOn.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/left-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/left-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/like.svg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/like.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/list.svg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/list.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/location.svg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/location.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/mail.svg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/mail.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/more.svg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/more.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/search.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/share.svg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/share.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/smile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/smile.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/video.mkv" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/video.mkv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/resources/yoyogi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/resources/yoyogi.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gong-exercises/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,16 +68,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gong-exercises/src" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Adi\IdeaProjects\react-students-exercises-Adi2332\gong-exercises\public" />
       <recent name="C:\Users\Adi\IdeaProjects\react-students-exercises-Adi2332\gong-exercises\src" />
       <recent name="C:\Users\Adi\IdeaProjects\react-students-exercises-Adi2332\gong-exercises" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Adi\IdeaProjects\react-students-exercises-Adi2332\gong-exercises\src" />
       <recent name="C:\Users\Adi\IdeaProjects" />
     </key>
   </component>
@@ -95,14 +93,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585816225293</updated>
-      <workItem from="1585816228405" duration="1634000" />
+      <workItem from="1585816228405" duration="5211000" />
     </task>
+    <task id="LOCAL-00001" summary="start">
+      <created>1585817977645</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585817977645</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="start" />
+    <option name="LAST_COMMIT_MESSAGE" value="start" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="492" y="118" key="CommitChangelistDialog2" timestamp="1585817976154">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="492" y="118" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585817976154" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1585817979202">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585817979202" />
     <state x="667" y="276" width="586" height="488" key="find.popup" timestamp="1585817329628">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
