@@ -23,7 +23,7 @@ class Menu extends React.Component {
                 <MenuItem icon={mail} label="Messages"/>
                 <MenuItem icon={bookmark} label="Bookmarks"/>
                 <MenuItem icon={list} label="Lists"/>
-                <MenuItem icon={profileImg} label="Profile" isProfileButton={true}/>
+                <MenuItem label="Profile" isProfileButton={true}/>
                 <MenuItem icon={more} label="More"/>
                 <MenuItem label="Tweet" isTweetButton={true}/>
             </div>

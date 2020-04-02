@@ -1,7 +1,7 @@
 $border-color: #e6ecf0;
 $button-color: #e9bfff;
 $main-color: #800080;
-$post-color: #f3f3f3;
+$tweet-color: #f3f3f3;
 $follow-color: #f7ecff;
 $font: "Comic Sans MS", serif;
 
@@ -52,13 +52,13 @@ $font: "Comic Sans MS", serif;
     padding-top: 0.5em;
   }
 
-  #write-post {
+  #writeTweet {
     display: flex;
     flex-direction: column;
     margin-top: 1em;
     //border-bottom: 1px solid $border-color;
 
-    .post-header {
+    .tweet-header {
       padding: 1em 0 0 0;
       display: flex;
 
@@ -70,21 +70,21 @@ $font: "Comic Sans MS", serif;
       }
     }
 
-    .post-title {
+    .tweet-title {
       font-weight: bold;
     }
 
-    #write-post-text {
+    #writeTweet-text {
       width: 98%;
     }
 
-    .post-actions {
+    .tweet-actions {
       display: flex;
       justify-content: space-between;
       margin-left: 5em;
       margin-right: 4em;
 
-      .post-action {
+      .tweet-action {
         & > * {
           pointer-events: none;
         }
@@ -116,7 +116,7 @@ $font: "Comic Sans MS", serif;
     }
   }
 
-  .post {
+  .tweet {
     display: flex;
     flex-direction: column;
     width: border-box;
@@ -124,10 +124,10 @@ $font: "Comic Sans MS", serif;
     border-bottom: 1px solid $border-color;
 
     &:hover {
-      background: $post-color;
+      background: $tweet-color;
     }
 
-    .post-header {
+    .tweet-header {
       padding: 1em 0 0 0;
       display: flex;
 
@@ -139,17 +139,17 @@ $font: "Comic Sans MS", serif;
       }
     }
 
-    .post-title {
+    .tweet-title {
       font-weight: bold;
     }
 
-    .post-text {
+    .tweet-text {
       margin-right: 2em;
       margin-left: 5em;
       width: border-box;
     }
 
-    .post-attachment {
+    .tweet-attachment {
       align-self: flex-end;
       max-width: 50%;
       max-height: 10%;
@@ -164,13 +164,13 @@ $font: "Comic Sans MS", serif;
       }
     }
 
-    .post-actions {
+    .tweet-actions {
       display: flex;
       justify-content: flex-start;
       margin-left: 5em;
       margin-right: 4em;
 
-      .post-action {
+      .tweet-action {
         & > * {
           pointer-events: none;
         }

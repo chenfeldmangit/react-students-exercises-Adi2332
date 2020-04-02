@@ -1,5 +1,6 @@
 import propTypes from 'prop-types';
 import * as React from "react";
+import ProfileImg from "./ProfileImg";
 
 class MenuItem extends React.Component {
 
@@ -16,8 +17,7 @@ class MenuItem extends React.Component {
         return <>
             {this.props.isTweetButton ? <></> :
                 (this.props.isProfileButton ?
-                    <img src={this.props.icon} className="button-icon profile-img" alt="profile image"/> :
-                    <object data={this.props.icon} className="button-icon"/>)}
+                    <ProfileImg class="button-icon"/> : <object data={this.props.icon} className="button-icon"/>)}
         </>;
     }
 

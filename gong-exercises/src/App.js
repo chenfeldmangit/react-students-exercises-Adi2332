@@ -1,13 +1,14 @@
 import React from 'react';
 import './Style/css/style.css';
 import Menu from "./components/Menu";
+import Stream from "./components/Stream";
 
 
 function App() {
   return (
     <div className="App">
       <Menu/>
-      <div id="stream"/>
+      <Stream/>
       <div id="follow"/>
     </div>
   );

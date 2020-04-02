@@ -43,34 +43,34 @@
   padding-bottom: 1em;
   padding-top: 0.5em;
 }
-#stream #write-post {
+#stream #writeTweet {
   display: flex;
   flex-direction: column;
   margin-top: 1em;
 }
-#stream #write-post .post-header {
+#stream #writeTweet .tweet-header {
   padding: 1em 0 0 0;
   display: flex;
 }
-#stream #write-post .post-header .profile-img {
+#stream #writeTweet .tweet-header .profile-img {
   width: 3em;
   height: 100%;
   border-radius: 50%;
   margin: 0 2% 0 1%;
 }
-#stream #write-post .post-title {
+#stream #writeTweet .tweet-title {
   font-weight: bold;
 }
-#stream #write-post #write-post-text {
+#stream #writeTweet #writeTweet-text {
   width: 98%;
 }
-#stream #write-post .post-actions {
+#stream #writeTweet .tweet-actions {
   display: flex;
   justify-content: space-between;
   margin-left: 5em;
   margin-right: 4em;
 }
-#stream #write-post .post-actions .post-action {
+#stream #writeTweet .tweet-actions .tweet-action {
   border: none;
   background: none;
   width: 3em;
@@ -78,52 +78,52 @@
   align-items: flex-start;
   border-radius: 2em;
 }
-#stream #write-post .post-actions .post-action > * {
+#stream #writeTweet .tweet-actions .tweet-action > * {
   pointer-events: none;
 }
-#stream #write-post .post-actions .post-action:hover {
+#stream #writeTweet .tweet-actions .tweet-action:hover {
   background: #e9bfff;
   justify-content: center;
 }
-#stream #write-post .tweet-button {
+#stream #writeTweet .tweet-button {
   background: #e9bfff;
   border-radius: 3em;
   border: none;
   width: 15%;
   height: 3em;
 }
-#stream #write-post .tweet-button > * {
+#stream #writeTweet .tweet-button > * {
   pointer-events: none;
 }
-#stream .post {
+#stream .tweet {
   display: flex;
   flex-direction: column;
   width: border-box;
   border-top: 1px solid #e6ecf0;
   border-bottom: 1px solid #e6ecf0;
 }
-#stream .post:hover {
+#stream .tweet:hover {
   background: #f3f3f3;
 }
-#stream .post .post-header {
+#stream .tweet .tweet-header {
   padding: 1em 0 0 0;
   display: flex;
 }
-#stream .post .post-header .profile-img {
+#stream .tweet .tweet-header .profile-img {
   width: 3em;
   height: 100%;
   border-radius: 50%;
   margin: 0 2% 0 1%;
 }
-#stream .post .post-title {
+#stream .tweet .tweet-title {
   font-weight: bold;
 }
-#stream .post .post-text {
+#stream .tweet .tweet-text {
   margin-right: 2em;
   margin-left: 5em;
   width: border-box;
 }
-#stream .post .post-attachment {
+#stream .tweet .tweet-attachment {
   align-self: flex-end;
   max-width: 50%;
   max-height: 10%;
@@ -131,17 +131,17 @@
   margin-right: 5em;
   margin-bottom: 1em;
 }
-#stream .post .post-attachment > * {
+#stream .tweet .tweet-attachment > * {
   width: 100%;
   border-radius: 2em;
 }
-#stream .post .post-actions {
+#stream .tweet .tweet-actions {
   display: flex;
   justify-content: flex-start;
   margin-left: 5em;
   margin-right: 4em;
 }
-#stream .post .post-actions .post-action {
+#stream .tweet .tweet-actions .tweet-action {
   border: none;
   background: none;
   width: 3em;
@@ -149,14 +149,14 @@
   align-items: flex-start;
   border-radius: 2em;
 }
-#stream .post .post-actions .post-action > * {
+#stream .tweet .tweet-actions .tweet-action > * {
   pointer-events: none;
 }
-#stream .post .post-actions .post-action:hover {
+#stream .tweet .tweet-actions .tweet-action:hover {
   background: #e9bfff;
   justify-content: center;
 }
-#stream .post .post-actions .liked:first-child {
+#stream .tweet .tweet-actions .liked:first-child {
   background: #e9bfff;
 }
 
