@@ -10,7 +10,6 @@ class WriteTweet extends React.Component {
 
     render() {
         return <div id="writeTweet">
-            <h1 id="stream-title">Home</h1>
             <div className="tweet-header">
                 <ProfileImg/>
                 <label>

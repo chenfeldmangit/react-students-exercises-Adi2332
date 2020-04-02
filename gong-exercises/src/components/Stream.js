@@ -6,6 +6,7 @@ class Stream extends React.Component {
     render() {
         return (
             <div id="stream">
+                <h1 id="stream-title">Home</h1>
                 <WriteTweet/>
             </div>
         );
