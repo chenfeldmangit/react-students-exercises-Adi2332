@@ -17,7 +17,8 @@ class Stream extends React.Component {
                 <h1 id="stream-title">Home</h1>
                 <WriteTweet/>
                 {Array.from(this.state.tweetList.list).flatMap(tweet =>
-                    <Tweet dataId={tweet.id} text={tweet.text} liked={tweet.like} likeAction={this.likeAction}/>)
+                    <Tweet dataId={tweet.id} text={tweet.text} liked={tweet.like}
+                           likeAction={this.likeAction} deleteAction={this.deleteAction}/>)
                 }
             </div>
         );
@@ -25,7 +26,17 @@ class Stream extends React.Component {
 
     likeAction = (id) => {
         this.state.tweetList.getTweetById(id).likeOrUnlikeTweet();
-    }
+        this.setState((state, props) => ({
+            tweetList: state.tweetList
+        }));
+    };
+
+    deleteAction = (id) => {
+        this.state.tweetList.removeTweetById(id);
+        this.setState((state, props) => ({
+            tweetList: state.tweetList
+        }));
+    };
 }
 
 Stream.propTypes = {

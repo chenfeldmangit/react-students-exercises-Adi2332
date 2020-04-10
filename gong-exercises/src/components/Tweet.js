@@ -27,7 +27,7 @@ class Tweet extends React.Component {
                 <TweetAction icon={like} class={this.state.liked ? "liked" : ""} action={this.likeOrUnlike}/>
                 <TweetAction icon={comment}/>
                 <TweetAction icon={share}/>
-                <TweetAction icon={bin}/>
+                <TweetAction icon={bin} action={this.delete}/>
             </div>
         </div>;
     }
@@ -37,15 +37,19 @@ class Tweet extends React.Component {
         this.setState((state, props) => ({
             liked: !state.liked
         }));
-    }
+    };
 
+    delete = () => {
+        this.props.deleteAction(this.props.dataId);
+    };
 }
 
 Tweet.propTypes = {
     text: propTypes.string.isRequired,
     dataId: propTypes.number.isRequired,
     liked: propTypes.bool,
-    likeAction: propTypes.func.isRequired
+    likeAction: propTypes.func.isRequired,
+    deleteAction: propTypes.func.isRequired
 };
 
 Tweet.defaultProps = {
