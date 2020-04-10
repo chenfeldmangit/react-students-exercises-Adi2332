@@ -6,7 +6,6 @@ import mail from "../resources/mail.svg";
 import hashtag from "../resources/hashtag.svg";
 import bookmark from "../resources/bookmark.svg";
 import list from "../resources/list.svg";
-import profileImg from "../resources/profile.png";
 import more from "../resources/more.svg";
 
 import MenuItem from "./MenuItem";
