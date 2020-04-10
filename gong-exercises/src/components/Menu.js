@@ -10,6 +10,7 @@ import profileImg from "../resources/profile.png";
 import more from "../resources/more.svg";
 
 import MenuItem from "./MenuItem";
+import propTypes from "prop-types";
 
 class Menu extends React.Component {
 
@@ -17,19 +18,24 @@ class Menu extends React.Component {
         return (
             <div id="menu">
                 <object data={bird} className="menu-icon"/>
-                <MenuItem icon={home} label="Home"/>
+                <MenuItem icon={home} label="Home" action={this.props.actions.loadStream}/>
                 <MenuItem icon={hashtag} label="Explore"/>
                 <MenuItem icon={bell} label="Notification"/>
                 <MenuItem icon={mail} label="Messages"/>
                 <MenuItem icon={bookmark} label="Bookmarks"/>
                 <MenuItem icon={list} label="Lists"/>
-                <MenuItem label="Profile" isProfileButton={true}/>
+                <MenuItem label="Profile" isProfileButton={true} action={this.props.actions.loadProfile}/>
                 <MenuItem icon={more} label="More"/>
                 <MenuItem label="Tweet" isTweetButton={true}/>
             </div>
         );
     }
 }
+
+
+Menu.propTypes = {
+    actions: propTypes.object.isRequired
+};
 
 
 export default Menu;
