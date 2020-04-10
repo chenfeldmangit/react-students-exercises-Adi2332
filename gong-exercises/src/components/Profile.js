@@ -5,6 +5,7 @@ import location from "../resources/location.svg"
 import joinOn from "../resources/joinOn.svg"
 import propTypes from "prop-types";
 import ProfileImg from "./ProfileImg";
+import {ProfileDto} from "../dto/ProfileDto";
 
 class Profile extends React.Component {
 
@@ -53,15 +54,7 @@ class Profile extends React.Component {
 
 Profile.propTypes = {
     back: propTypes.object.isRequired,
-    profile: propTypes.shape({
-        name: propTypes.string,
-        tweetsNumber: propTypes.number,
-        bio: propTypes.string,
-        following: propTypes.number,
-        followers: propTypes.number,
-        joinOn: propTypes.string,
-        location: propTypes.string
-    }).isRequired
+    profile: propTypes.instanceOf(ProfileDto).isRequired
 };
 
 export default Profile;

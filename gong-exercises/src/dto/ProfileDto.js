@@ -1,5 +1,3 @@
-import propTypes from "prop-types";
-
 export class ProfileDto {
     constructor(name, tweetsNumber, location, joinOn, following, followers, bio) {
         this.name = name;

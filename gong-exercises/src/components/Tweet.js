@@ -5,6 +5,7 @@ import TweetAction from "./TweetAction";
 import like from "../resources/like.svg";
 import comment from "../resources/comment.svg";
 import share from "../resources/share.svg";
+import bin from "../resources/bin.svg";
 
 
 class Tweet extends React.Component {
@@ -26,11 +27,13 @@ class Tweet extends React.Component {
                 <TweetAction icon={like} class={this.state.liked ? "liked" : ""} action={this.likeOrUnlike}/>
                 <TweetAction icon={comment}/>
                 <TweetAction icon={share}/>
+                <TweetAction icon={bin}/>
             </div>
         </div>;
     }
 
     likeOrUnlike = () => {
+        this.props.likeAction(this.props.dataId);
         this.setState((state, props) => ({
             liked: !state.liked
         }));
@@ -41,7 +44,8 @@ class Tweet extends React.Component {
 Tweet.propTypes = {
     text: propTypes.string.isRequired,
     dataId: propTypes.number.isRequired,
-    liked: propTypes.bool
+    liked: propTypes.bool,
+    likeAction: propTypes.func.isRequired
 };
 
 Tweet.defaultProps = {
