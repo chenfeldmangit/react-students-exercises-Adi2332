@@ -12,7 +12,7 @@ class Profile extends React.Component {
     render() {
         return (<div id="profilePage">
                 <div className="profile-header">
-                    <button className="button" onClick={this.props.back}>
+                    <button className="button" onClick={this.props.backAction}>
                         <object data={leftArrow} className="button-icon"/>
                     </button>
                     <div>
@@ -53,7 +53,7 @@ class Profile extends React.Component {
 }
 
 Profile.propTypes = {
-    back: propTypes.object.isRequired,
+    backAction: propTypes.func.isRequired,
     profile: propTypes.instanceOf(ProfileDto).isRequired
 };
 

@@ -33,7 +33,10 @@ class Menu extends React.Component {
 
 
 Menu.propTypes = {
-    actions: propTypes.object.isRequired
+    actions: propTypes.shape({
+        loadStream: propTypes.func.isRequired,
+        loadProfile: propTypes.func.isRequired
+    }).isRequired
 };
 
 
