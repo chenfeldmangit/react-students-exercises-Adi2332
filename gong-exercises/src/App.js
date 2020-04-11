@@ -14,14 +14,20 @@ const tweetList = new TweetList([new TweetDto(1, "Lorem ipsum dolor sit amet, co
 ]);
 
 function App() {
-    const [profile, setProfile] = useState(new ProfileDto("Adi", 3, "Tel Aviv", "March 2020",
-        152, 2548, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, " +
-        "asperiores assumenda beatae cupiditate dolorem, ea esse fugiat iure mollitia odio odit pariatur perspiciatis " +
-        "possimus qui repellendus sapiente sunt velit."));
     const [state, setState] = useState("stream");
     const menuActions = {
         loadProfile: () => setState("profile"),
         loadStream: () => setState("stream")
+    };
+
+    const [profile, setProfile] = useState(new ProfileDto("Adi", 3, "Tel Aviv", "March 2020",
+        152, 2548, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, " +
+        "asperiores assumenda beatae cupiditate dolorem, ea esse fugiat iure mollitia odio odit pariatur perspiciatis " +
+        "possimus qui repellendus sapiente sunt velit."));
+    let saveAction = (p) => {
+        console.log(p);
+        setProfile(p);
+        menuActions.loadProfile();
     };
 
     return (
@@ -30,11 +36,7 @@ function App() {
             {state === "stream" ? <Stream tweetList={tweetList}/>
                 : <Profile profile={profile} backAction={menuActions.loadStream} editAction={() => setState("edit")}/>}
             {state === "edit" ?
-                <EditProfile closeAction={menuActions.loadProfile} profile={profile} saveAction={(p) => {
-                    console.log(p);
-                    setProfile(p);
-                    menuActions.loadProfile();
-                }}/> : <></>}
+                <EditProfile closeAction={menuActions.loadProfile} profile={profile} saveAction={saveAction}/> : <></>}
             <div id="follow"/>
         </div>
     );
