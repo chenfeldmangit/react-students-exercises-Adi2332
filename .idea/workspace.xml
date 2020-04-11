@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59acea2d-91f2-4d4d-bebe-dbbe998a7756" name="Default Changelist" comment="">
+    <list default="true" id="59acea2d-91f2-4d4d-bebe-dbbe998a7756" name="Default Changelist" comment="e">
+      <change afterPath="$PROJECT_DIR$/gong-exercises/src/components/EditProfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/src/components/FormInput.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/Style/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/Style/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/Style/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/Style/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gong-exercises/src/components/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/components/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/components/Stream.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/components/Stream.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/dto/ProfileDto.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/dto/ProfileDto.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586597407064</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="new line">
+      <created>1586597557066</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1586597557066</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,10 +234,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="720" y="331" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586528578398" />
-    <state x="492" y="118" width="1355" height="837" key="CommitChangelistDialog2" timestamp="1586597406595">
+    <state x="492" y="118" width="1355" height="837" key="CommitChangelistDialog2" timestamp="1586604045646">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="492" y="118" width="1355" height="837" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586597406595" />
+    <state x="492" y="118" width="1355" height="837" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586604045646" />
     <state x="492" y="118" width="1389" height="804" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585838912098" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1585829019729">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -233,35 +247,35 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="787" y="304" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585833778311" />
-    <state x="540" y="267" width="840" height="603" key="IDE.errors.dialog" timestamp="1586597416896">
+    <state x="540" y="267" width="840" height="603" key="IDE.errors.dialog" timestamp="1586601728786">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="540" y="267" key="IDE.errors.dialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586597416896" />
+    <state x="540" y="267" key="IDE.errors.dialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586601728786" />
     <state x="540" y="267" width="840" height="603" key="IDE.errors.dialog/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585835705739" />
-    <state x="635" y="235" key="RollbackChangesDialog" timestamp="1586597395091">
+    <state x="635" y="235" key="RollbackChangesDialog" timestamp="1586603088591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="635" y="235" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586597395091" />
+    <state x="635" y="235" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586603088591" />
     <state x="635" y="235" key="RollbackChangesDialog/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585832188006" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1586597408077">
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1586597559696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586597408077" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586597559696" />
     <state x="552" y="257" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585838913625" />
     <state x="478" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586532088197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="478" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586532088197" />
     <state x="478" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585837699926" />
-    <state x="336" y="110" width="1342" height="870" key="find.popup" timestamp="1586597324196">
+    <state x="337" y="110" width="1342" height="870" key="find.popup" timestamp="1586601703279">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="336" y="110" width="1342" height="870" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586597324196" />
+    <state x="337" y="110" width="1342" height="870" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586601703279" />
     <state x="336" y="110" width="1342" height="870" key="find.popup/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585838689978" />
-    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1586532401205">
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1586599386092">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586532401205" />
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586599386092" />
     <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585823603226" />
   </component>
 </project>

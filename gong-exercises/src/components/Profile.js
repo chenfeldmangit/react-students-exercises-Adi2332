@@ -25,7 +25,7 @@ class Profile extends React.Component {
                     <div className="profile-header">
                         <img src={yoyogi} className="background-img" alt="background-img"/>
                         <ProfileImg/>
-                        <button className="edit-button" onClick="editProfile()">
+                        <button className="edit-button" onClick={this.props.editAction}>
                             <label className="button-label">Edit Profile</label>
                         </button>
                     </div>
@@ -56,6 +56,7 @@ class Profile extends React.Component {
 
 Profile.propTypes = {
     backAction: propTypes.func.isRequired,
+    editAction: propTypes.func.isRequired,
     profile: propTypes.instanceOf(ProfileDto).isRequired
 };
 

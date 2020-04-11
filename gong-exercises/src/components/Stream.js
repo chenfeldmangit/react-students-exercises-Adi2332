@@ -32,7 +32,6 @@ class Stream extends React.Component {
         this.state.tweetList.getTweetById(id).likeOrUnlikeTweet();
         this.setState((state, props) => ({
             tweetList: state.tweetList,
-            nextTweetId: state.nextTweetId
         }));
     };
 
@@ -40,7 +39,6 @@ class Stream extends React.Component {
         this.state.tweetList.removeTweetById(id);
         this.setState((state, props) => ({
             tweetList: state.tweetList,
-            nextTweetId: state.nextTweetId
         }));
     };
 

@@ -17,7 +17,7 @@ $font: "Comic Sans MS", serif;
 
   .dialog {
     z-index: 2;
-    display: none;
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
@@ -447,7 +447,7 @@ $font: "Comic Sans MS", serif;
   }
 }
 
-#edit-profile-dialog {
+#editProfile {
   position: absolute;
   top: 10%;
   width: 50%;

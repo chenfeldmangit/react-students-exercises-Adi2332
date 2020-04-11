@@ -8,4 +8,11 @@ export class ProfileDto {
         this.following = following;
         this.followers = followers;
     }
+
+    update(name, bio, location){
+      this.name = name;
+      this.bio = bio;
+      this.location = location;
+      console.log(name);
+    };
 }
