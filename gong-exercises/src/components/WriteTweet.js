@@ -22,7 +22,7 @@ class WriteTweet extends React.Component {
                     <TweetAction icon={smile}/>
                     <TweetAction icon={addLocation}/>
                 </div>
-                <button className="tweet-button"> {/*TODO: onclick*/}
+                <button className="tweet-button">
                     <label className="button-label">Tweet</label>
                 </button>
             </div>
