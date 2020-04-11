@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59acea2d-91f2-4d4d-bebe-dbbe998a7756" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/gong-exercises/src/components/Stream.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/components/Stream.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/src/dto/TweetDto.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/dto/TweetDto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/components/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/components/Profile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586596332930</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="new line">
+      <created>1586597407064</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1586597407064</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,17 +212,18 @@
     <MESSAGE value="like" />
     <MESSAGE value="delete" />
     <MESSAGE value="add" />
-    <option name="LAST_COMMIT_MESSAGE" value="add" />
+    <MESSAGE value="new line" />
+    <option name="LAST_COMMIT_MESSAGE" value="new line" />
   </component>
   <component name="WindowStateProjectService">
     <state x="720" y="331" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586528578398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="720" y="331" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586528578398" />
-    <state x="492" y="118" width="1355" height="837" key="CommitChangelistDialog2" timestamp="1586596332531">
+    <state x="492" y="118" width="1355" height="837" key="CommitChangelistDialog2" timestamp="1586597406595">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="492" y="118" width="1355" height="837" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586596332531" />
+    <state x="492" y="118" width="1355" height="837" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586597406595" />
     <state x="492" y="118" width="1389" height="804" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585838912098" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1585829019729">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -225,20 +233,20 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="787" y="304" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585833778311" />
-    <state x="540" y="267" width="840" height="603" key="IDE.errors.dialog" timestamp="1586535682758">
+    <state x="540" y="267" width="840" height="603" key="IDE.errors.dialog" timestamp="1586597416896">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="540" y="267" key="IDE.errors.dialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586535682758" />
+    <state x="540" y="267" key="IDE.errors.dialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586597416896" />
     <state x="540" y="267" width="840" height="603" key="IDE.errors.dialog/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585835705739" />
-    <state x="635" y="235" key="RollbackChangesDialog" timestamp="1586594038043">
+    <state x="635" y="235" key="RollbackChangesDialog" timestamp="1586597395091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="635" y="235" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586594038043" />
+    <state x="635" y="235" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586597395091" />
     <state x="635" y="235" key="RollbackChangesDialog/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585832188006" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1586596334073">
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1586597408077">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586596334073" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586597408077" />
     <state x="552" y="257" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585838913625" />
     <state x="478" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586532088197">
       <screen x="0" y="0" width="1920" height="1040" />

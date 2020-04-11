@@ -17,7 +17,7 @@ class Profile extends React.Component {
                     </button>
                     <div>
                         <h1 id="profileTitle">{this.props.profile.name}</h1>
-                        <p id="tweetNumber">{this.props.profile.tweetsNumber}</p>
+                        <p id="tweetNumber">{this.props.profile.tweetsNumber + " Tweets"}</p>
                     </div>
                 </div>
 
@@ -42,8 +42,10 @@ class Profile extends React.Component {
                         </div>
                     </div>
                     <div id="follow-metadata">
-                        <label className="metadata"><strong id="following">{this.props.profile.following}</strong> Following</label>
-                        <label className="metadata"><strong id="followers">{this.props.profile.followers}</strong> Followers</label>
+                        <label className="metadata">
+                            <strong id="following">{this.props.profile.following}</strong> Following</label>
+                        <label className="metadata">
+                            <strong id="followers">{this.props.profile.followers}</strong> Followers</label>
                     </div>
                 </div>
 
