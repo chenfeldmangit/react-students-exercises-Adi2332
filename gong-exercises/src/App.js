@@ -13,13 +13,6 @@ const tweetList = new TweetList([new TweetDto(1, "Lorem ipsum dolor sit amet, co
 ]);
 
 function App() {
-    const [nextTweetId, setNextTweetId] = useState(4);
-    const getNewTweetId = () => {
-        const result = nextTweetId;
-        setNextTweetId(nextTweetId + 1);
-        return result;
-    };
-
     const [profile, setProfile] = useState(new ProfileDto("Adi", 3, "Tel Aviv", "March 2020",
         152, 2548, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, " +
         "asperiores assumenda beatae cupiditate dolorem, ea esse fugiat iure mollitia odio odit pariatur perspiciatis " +

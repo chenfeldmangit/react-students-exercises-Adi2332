@@ -95,6 +95,10 @@
 #stream #writeTweet .tweet-button > * {
   pointer-events: none;
 }
+#stream #writeTweet .disabled {
+  pointer-events: none;
+  opacity: 0.65;
+}
 #stream .tweet {
   display: flex;
   flex-direction: column;

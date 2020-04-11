@@ -114,6 +114,11 @@ $font: "Comic Sans MS", serif;
         pointer-events: none;
       }
     }
+
+    .disabled{
+      pointer-events: none;
+      opacity: 0.65;
+    }
   }
 
   .tweet {
