@@ -126,6 +126,7 @@
   margin-right: 2em;
   margin-left: 5em;
   width: border-box;
+  white-space: pre-line;
 }
 #stream .tweet .tweet-attachment {
   align-self: flex-end;

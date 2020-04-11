@@ -152,6 +152,7 @@ $font: "Comic Sans MS", serif;
       margin-right: 2em;
       margin-left: 5em;
       width: border-box;
+      white-space: pre-line;
     }
 
     .tweet-attachment {
@@ -164,7 +165,6 @@ $font: "Comic Sans MS", serif;
 
       & > * {
         width: 100%;
-        //align-self: flex-end;
         border-radius: 2em;
       }
     }

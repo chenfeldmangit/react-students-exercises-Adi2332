@@ -1,7 +1,7 @@
 export class TweetDto {
     constructor(id, text, like = false) {
         this.id = id;
-        this.text = text.replace(/\r?\n/g, '<br />');
+        this.text = text;
         this.like = like;
     }
 
