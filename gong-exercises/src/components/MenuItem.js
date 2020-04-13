@@ -37,6 +37,7 @@ MenuItem.propTypes = {
 MenuItem.defaultProps = {
     isTweetButton: false,
     isProfileButton: false,
+    icon: "",
     action: () => {}
 };
 
