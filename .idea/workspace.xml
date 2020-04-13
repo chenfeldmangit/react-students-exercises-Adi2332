@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59acea2d-91f2-4d4d-bebe-dbbe998a7756" name="Default Changelist" comment="clean up">
-      <change afterPath="$PROJECT_DIR$/gong-exercises/src/Util/LoadMyApp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/src/Util/LocalStorageApi.js" afterDir="false" />
+    <list default="true" id="59acea2d-91f2-4d4d-bebe-dbbe998a7756" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/src/components/function/StreamFunc.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/components/function/StreamFunc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/src/dto/ProfileDto.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/dto/ProfileDto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/src/dto/TweetDto.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/dto/TweetDto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/src/dto/TweetList.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/dto/TweetList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/components/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/components/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/components/Stream.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/components/Stream.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/components/Tweet.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/components/Tweet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/components/WriteTweet.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/components/WriteTweet.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +51,7 @@
       <recent name="C:\Users\Adi\IdeaProjects" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Adi\IdeaProjects\react-students-exercises-Adi2332\gong-exercises\src\components" />
       <recent name="C:\Users\Adi\IdeaProjects\react-students-exercises-Adi2332\gong-exercises\src\Style" />
       <recent name="C:\Users\Adi\IdeaProjects\react-students-exercises-Adi2332\gong-exercises\public" />
       <recent name="C:\Users\Adi\IdeaProjects\react-students-exercises-Adi2332\gong-exercises\src" />
@@ -256,7 +254,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586774614576</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="use LocalStorageApi">
+      <created>1586777918851</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1586777918851</updated>
+    </task>
+    <task id="LOCAL-00028" summary="cleanup">
+      <created>1586778112352</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1586778112352</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,17 +286,19 @@
     <MESSAGE value="EditProfile.js" />
     <MESSAGE value="class to func" />
     <MESSAGE value="clean up" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up" />
+    <MESSAGE value="use LocalStorageApi" />
+    <MESSAGE value="cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
   </component>
   <component name="WindowStateProjectService">
     <state x="720" y="331" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586528578398">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="720" y="331" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586528578398" />
-    <state x="492" y="118" width="1355" height="837" key="CommitChangelistDialog2" timestamp="1586777918429">
+    <state x="492" y="118" width="1355" height="837" key="CommitChangelistDialog2" timestamp="1586778111270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="492" y="118" width="1355" height="837" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586777918429" />
+    <state x="492" y="118" width="1355" height="837" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586778111270" />
     <state x="492" y="118" width="1389" height="804" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585838912098" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1585829019729">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -304,10 +318,10 @@
     </state>
     <state x="635" y="235" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586603088591" />
     <state x="635" y="235" key="RollbackChangesDialog/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585832188006" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1586777919771">
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1586778113668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586777919771" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586778113668" />
     <state x="552" y="257" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585838913625" />
     <state x="478" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586532088197">
       <screen x="0" y="0" width="1920" height="1040" />

@@ -8,6 +8,7 @@ import bookmark from "../resources/bookmark.svg";
 import list from "../resources/list.svg";
 import more from "../resources/more.svg";
 import * as React from "react";
+import propTypes from "prop-types";
 
 
 function Menu(props) {
@@ -27,5 +28,9 @@ function Menu(props) {
         </div>
     );
 }
+
+Menu.propTypes = {
+    actions: propTypes.object.isRequired
+};
 
 export default Menu;

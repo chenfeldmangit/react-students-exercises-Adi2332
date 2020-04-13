@@ -5,6 +5,7 @@ import smile from "../resources/smile.svg";
 import addLocation from "../resources/addLocation.svg";
 import * as React from "react";
 import {useState} from "react";
+import propTypes from "prop-types";
 
 
 function WriteTweet(props) {
@@ -36,5 +37,9 @@ function WriteTweet(props) {
             </div>
         </div>);
 }
+
+WriteTweet.propTypes = {
+    addTweetAction: propTypes.func.isRequired
+};
 
 export default WriteTweet;

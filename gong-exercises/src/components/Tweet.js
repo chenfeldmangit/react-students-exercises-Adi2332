@@ -5,6 +5,8 @@ import comment from "../resources/comment.svg";
 import share from "../resources/share.svg";
 import bin from "../resources/bin.svg";
 import * as React from "react";
+import propTypes from "prop-types";
+import {TweetDto} from "../dto/TweetDto";
 
 
 function Tweet(props) {
@@ -24,5 +26,11 @@ function Tweet(props) {
         </div>
     </div>;
 }
+
+Tweet.propTypes = {
+    tweet: propTypes.instanceOf(TweetDto).isRequired,
+    likeAction: propTypes.func.isRequired,
+    deleteAction: propTypes.func.isRequired
+};
 
 export default Tweet;

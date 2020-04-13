@@ -1,4 +1,5 @@
 import * as React from "react";
+import propTypes from "prop-types";
 import {TweetList} from "../dto/TweetList";
 import {TweetDto} from "../dto/TweetDto";
 import Tweet from "./Tweet";
@@ -45,5 +46,10 @@ function Stream(props) {
         </div>
     );
 }
+
+Stream.propTypes = {
+    tweetList: propTypes.instanceOf(TweetList).isRequired,
+    nextTweetId: propTypes.number.isRequired
+};
 
 export default Stream;
