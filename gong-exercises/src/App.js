@@ -8,12 +8,14 @@ import Stream from "./components/Stream";
 import Menu from "./components/Menu";
 import LocalStorageApi from "./Util/LocalStorageApi";
 import LoadMyApp from "./Util/LoadMyApp";
+import Notifications from "./components/Notifications";
 
 LoadMyApp();
 
 function App() {
     const [state, setState] = useState("stream");
     const menuActions = {
+        loadNotifications: () => setState("notifications"),
         loadProfile: () => setState("profile"),
         loadStream: () => setState("stream")
     };
@@ -28,13 +30,17 @@ function App() {
     };
     useEffect(() => {
         LocalStorageApi.setAsJson("profile", profile);
-    },[profile]);
+    }, [profile]);
 
     return (
         <div className="App">
             <Menu actions={menuActions}/>
             {state === "stream" ? <Stream tweetList={tweetList} nextTweetId={nextTweetId}/>
-                : <Profile profile={profile} backAction={menuActions.loadStream} editAction={() => setState("edit")}/>}
+                : (state === "notifications" ? <Notifications/>
+                        : <Profile profile={profile} backAction={menuActions.loadStream}
+                                   editAction={() => setState("edit")}/>
+                )
+            }
             {state === "edit" ?
                 <EditProfile closeAction={menuActions.loadProfile} profile={profile} saveAction={saveAction}/> : <></>}
             <div id="follow"/>

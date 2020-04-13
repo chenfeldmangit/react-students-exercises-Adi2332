@@ -18,7 +18,7 @@ function Menu(props) {
             <object data={bird} className="menu-icon"/>
             <MenuItem icon={home} label="Home" action={props.actions.loadStream}/>
             <MenuItem icon={hashtag} label="Explore"/>
-            <MenuItem icon={bell} label="Notification"/>
+            <MenuItem icon={bell} label="Notifications" action={props.actions.loadNotifications}/>
             <MenuItem icon={mail} label="Messages"/>
             <MenuItem icon={bookmark} label="Bookmarks"/>
             <MenuItem icon={list} label="Lists"/>
@@ -30,7 +30,11 @@ function Menu(props) {
 }
 
 Menu.propTypes = {
-    actions: propTypes.object.isRequired
+    actions: propTypes.shape({
+        loadStream: propTypes.func.isRequired,
+        loadNotifications: propTypes.func.isRequired,
+        loadProfile: propTypes.func.isRequired
+    }).isRequired
 };
 
 export default Menu;

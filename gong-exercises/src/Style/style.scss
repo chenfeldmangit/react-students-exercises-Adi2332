@@ -580,3 +580,28 @@ $font: "Comic Sans MS", serif;
     }
   }
 }
+
+#notifications {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 4;
+  width: 2em;
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  margin: 0 1em 1em;
+  position: relative;
+
+  #notifications-title {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    color: $main-color;
+    z-index: 1;
+    background: white;
+    border-bottom: 1px solid $border-color;
+    margin: 0;
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+  }
+}
