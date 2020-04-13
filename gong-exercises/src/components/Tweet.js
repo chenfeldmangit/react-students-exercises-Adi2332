@@ -12,7 +12,6 @@ class Tweet extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {liked: props.liked};
     }
 
     render() {
@@ -24,7 +23,7 @@ class Tweet extends React.Component {
             <p className="tweet-text">{this.props.text}</p>
             <div className="post-attachment"/>
             <div className="tweet-actions">
-                <TweetAction icon={like} class={this.state.liked ? "liked" : ""} action={this.likeOrUnlike}/>
+                <TweetAction icon={like} class={this.props.liked ? "liked" : ""} action={this.likeOrUnlike}/>
                 <TweetAction icon={comment}/>
                 <TweetAction icon={share}/>
                 <TweetAction icon={bin} action={this.delete}/>
@@ -34,9 +33,6 @@ class Tweet extends React.Component {
 
     likeOrUnlike = () => {
         this.props.likeAction(this.props.dataId);
-        this.setState((state, props) => ({
-            liked: !state.liked
-        }));
     };
 
     delete = () => {

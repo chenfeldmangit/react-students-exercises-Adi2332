@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './Style/css/style.css';
+import './Style/scss/style.scss';
 import Menu from "./components/Menu";
 import Stream from "./components/Stream";
 import Profile from "./components/Profile";
@@ -24,9 +24,8 @@ function App() {
         152, 2548, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, " +
         "asperiores assumenda beatae cupiditate dolorem, ea esse fugiat iure mollitia odio odit pariatur perspiciatis " +
         "possimus qui repellendus sapiente sunt velit."));
-    let saveAction = (p) => {
-        console.log(p);
-        setProfile(p);
+    let saveAction = (newProfile) => {
+        setProfile(newProfile);
         menuActions.loadProfile();
     };
 
