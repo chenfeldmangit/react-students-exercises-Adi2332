@@ -1,6 +1,12 @@
+import {TweetDto} from "./TweetDto";
+
 export class TweetList {
     constructor(list) {
         this.list = list;
+    }
+
+    static fromJson(json) {
+        return new TweetList(json.list.map(tweet => TweetDto.fromJson(tweet)));
     }
 
     addTweet(tweet) {

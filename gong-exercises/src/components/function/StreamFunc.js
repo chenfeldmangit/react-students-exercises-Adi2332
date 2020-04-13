@@ -4,11 +4,20 @@ import {TweetDto} from "../../dto/TweetDto";
 import TweetFunc from "./TweetFunc";
 import {useState} from "react";
 import WriteTweetFunc from "./WriteTweetFunc";
-
+import {useEffect} from "react";
+import LocalStorageApi from "../../Util/LocalStorageApi";
 
 function StreamFunc(props) {
     const [tweetList, setTweetList] = useState(new TweetList(props.tweetList.list));
-    const [nextTweetId, setNextTweetId] = useState(props.tweetList.list.length + 1);
+    const [nextTweetId, setNextTweetId] = useState(props.nextTweetId);
+
+    useEffect(() => {
+        LocalStorageApi.setAsJson("tweetList", tweetList);
+    }, [tweetList]);
+
+    useEffect(() => {
+        LocalStorageApi.setInt("nextTweetId", nextTweetId);
+    }, [nextTweetId]);
 
     const likeAction = (id) => {
         tweetList.getTweetById(id).likeOrUnlikeTweet();
