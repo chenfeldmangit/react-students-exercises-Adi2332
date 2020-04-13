@@ -9,6 +9,7 @@ import Menu from "./components/Menu";
 import LocalStorageApi from "./Util/LocalStorageApi";
 import LoadMyApp from "./Util/LoadMyApp";
 import Notifications from "./components/Notifications";
+import {NotificationList} from "./dto/NotificationList";
 
 LoadMyApp();
 
@@ -22,6 +23,7 @@ function App() {
 
     const tweetList = LocalStorageApi.getInstantOfClass("tweetList", TweetList);
     const nextTweetId = LocalStorageApi.getInt("nextTweetId");
+    const notificationList = LocalStorageApi.getInstantOfClass("notificationList", NotificationList);
 
     const [profile, setProfile] = useState(LocalStorageApi.getInstantOfClass("profile", ProfileDto));
     const saveAction = (newProfile) => {
@@ -36,7 +38,7 @@ function App() {
         <div className="App">
             <Menu actions={menuActions}/>
             {state === "stream" ? <Stream tweetList={tweetList} nextTweetId={nextTweetId}/>
-                : (state === "notifications" ? <Notifications/>
+                : (state === "notifications" ? <Notifications notificationList={notificationList}/>
                         : <Profile profile={profile} backAction={menuActions.loadStream}
                                    editAction={() => setState("edit")}/>
                 )

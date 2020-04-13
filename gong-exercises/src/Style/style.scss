@@ -3,6 +3,7 @@ $button-color: #e9bfff;
 $main-color: #800080;
 $tweet-color: #f3f3f3;
 $follow-color: #f7ecff;
+$font-color: #b4b4b4;
 $font: "Comic Sans MS", serif;
 
 .icon-color {
@@ -603,5 +604,49 @@ $font: "Comic Sans MS", serif;
     margin: 0;
     padding-bottom: 1em;
     padding-top: 0.5em;
+  }
+
+  .notification {
+    display: flex;
+    flex-direction: column;
+    width: border-box;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+
+    &:hover {
+      background: $tweet-color;
+    }
+
+    .notification-header {
+      padding: 1em 0 0 0;
+      display: flex;
+
+      .notification-type {
+        margin: 0 1% 0 2%;
+      }
+
+      .profile-img {
+        width: 3em;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    .notification-person {
+      margin-right: 2em;
+      margin-left: 5em;
+      margin-bottom: 0;
+      width: border-box;
+      white-space: pre-line;
+    }
+
+    .notification-text {
+      margin-right: 2em;
+      margin-left: 5em;
+      margin-top: 0;
+      width: border-box;
+      white-space: pre-line;
+      color: $font-color;
+    }
   }
 }

@@ -19,7 +19,14 @@ function LoadMyApp() {
 
     LocalStorageApi.setAsJson("nextTweetId", 4);
 
-    LocalStorageApi.setAsJson("notifications", new NotificationList([
+    LocalStorageApi.setAsJson("notificationList", new NotificationList([
+        new NotificationDto("like", new TweetDto(1, "Lorem ipsum dolor sit amet, consectetur adipisicing elit.")),
+        new NotificationDto("follow"),
+        new NotificationDto("like", new TweetDto(1, "Lorem ipsum dolor sit amet, consectetur adipisicing elit.")),
+        new NotificationDto("follow"),
+        new NotificationDto("follow"),
+        new NotificationDto("like", new TweetDto(1, "Lorem ipsum dolor sit amet, consectetur adipisicing elit.")),
+        new NotificationDto("like", new TweetDto(1, "Lorem ipsum dolor sit amet, consectetur adipisicing elit.")),
         new NotificationDto("like", new TweetDto(1, "Lorem ipsum dolor sit amet, consectetur adipisicing elit.")),
         new NotificationDto("follow")
     ]));
