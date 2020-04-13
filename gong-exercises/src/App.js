@@ -1,15 +1,12 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import './Style/style.scss';
 import Profile from "./components/Profile";
 import EditProfile from "./components/EditProfile";
 import {ProfileDto} from "./dto/ProfileDto";
-import {TweetList} from "./dto/TweetList";
 import Stream from "./components/Stream";
 import Menu from "./components/Menu";
-import LocalStorageApi from "./Util/LocalStorageApi";
 import LoadMyApp from "./Util/LoadMyApp";
 import Notifications from "./components/Notifications";
-import {NotificationList} from "./dto/NotificationList";
 import UseLocalStorage from "./Util/UseLocalStorage";
 
 LoadMyApp();
@@ -29,7 +26,7 @@ function App() {
             <Menu actions={menuActions}/>
             {state === "stream" ? <Stream/>
                 : (state === "notifications" ? <Notifications/>
-                        : <Profile profile={profile} backAction={menuActions.loadStream}editAction={() => setState("edit")}/>
+                        : <Profile profile={profile} backAction={menuActions.loadStream} editAction={() => setState("edit")}/>
                 )
             }
             {state === "edit" ?
