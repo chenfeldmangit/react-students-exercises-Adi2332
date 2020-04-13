@@ -1,5 +1,4 @@
 import * as React from "react";
-import WriteTweet from "../WriteTweet";
 import {TweetList} from "../../dto/TweetList";
 import {TweetDto} from "../../dto/TweetDto";
 import TweetFunc from "./TweetFunc";
