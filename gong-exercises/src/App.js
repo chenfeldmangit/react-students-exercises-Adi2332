@@ -4,8 +4,8 @@ import Profile from "./components/Profile";
 import EditProfile from "./components/EditProfile";
 import {ProfileDto} from "./dto/ProfileDto";
 import {TweetList} from "./dto/TweetList";
-import StreamFunc from "./components/function/StreamFunc";
-import MenuFunc from "./components/function/MenuFunc";
+import Stream from "./components/Stream";
+import Menu from "./components/Menu";
 import LocalStorageApi from "./Util/LocalStorageApi";
 import LoadMyApp from "./Util/LoadMyApp";
 
@@ -32,8 +32,8 @@ function App() {
 
     return (
         <div className="App">
-            <MenuFunc actions={menuActions}/>
-            {state === "stream" ? <StreamFunc tweetList={tweetList} nextTweetId={nextTweetId}/>
+            <Menu actions={menuActions}/>
+            {state === "stream" ? <Stream tweetList={tweetList} nextTweetId={nextTweetId}/>
                 : <Profile profile={profile} backAction={menuActions.loadStream} editAction={() => setState("edit")}/>}
             {state === "edit" ?
                 <EditProfile closeAction={menuActions.loadProfile} profile={profile} saveAction={saveAction}/> : <></>}

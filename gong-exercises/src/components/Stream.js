@@ -1,59 +1,49 @@
 import * as React from "react";
-import WriteTweet from "./WriteTweet";
-import Tweet from "./Tweet";
-import propTypes from "prop-types";
 import {TweetList} from "../dto/TweetList";
 import {TweetDto} from "../dto/TweetDto";
+import Tweet from "./Tweet";
+import {useState} from "react";
+import WriteTweet from "./WriteTweet";
+import {useEffect} from "react";
+import LocalStorageApi from "../Util/LocalStorageApi";
 
-class Stream extends React.Component {
+function Stream(props) {
+    const [tweetList, setTweetList] = useState(new TweetList(props.tweetList.list));
+    const [nextTweetId, setNextTweetId] = useState(props.nextTweetId);
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            tweetList: props.tweetList,
-            nextTweetId: props.tweetList.list.length + 1
-        };
-    }
+    useEffect(() => {
+        LocalStorageApi.setAsJson("tweetList", tweetList);
+    }, [tweetList]);
 
-    render() {
-        return (
-            <div id="stream">
-                <h1 id="stream-title">Home</h1>
-                <WriteTweet addTweetAction={this.addAction}/>
-                {Array.from(this.state.tweetList.list).flatMap(tweet =>
-                    <Tweet tweet={tweet} likeAction={this.likeAction} deleteAction={this.deleteAction}/>)
-                }
-            </div>
-        );
-    }
+    useEffect(() => {
+        LocalStorageApi.setInt("nextTweetId", nextTweetId);
+    }, [nextTweetId]);
 
-    likeAction = (id) => {
-        this.state.tweetList.getTweetById(id).likeOrUnlikeTweet();
-        this.setState((state, props) => ({
-            tweetList: state.tweetList,
-        }));
+    const likeAction = (id) => {
+        tweetList.getTweetById(id).likeOrUnlikeTweet();
+        setTweetList(new TweetList(tweetList.list));
     };
 
-    deleteAction = (id) => {
-        this.state.tweetList.removeTweetById(id);
-        this.setState((state, props) => ({
-            tweetList: state.tweetList,
-        }));
+    const deleteAction = (id) => {
+        tweetList.removeTweetById(id);
+        setTweetList(new TweetList(tweetList.list));
     };
 
-    addAction = (text) => {
-        this.state.tweetList.addTweet(new TweetDto(this.state.nextTweetId, text));
-        this.setState((state, props) => ({
-            tweetList: state.tweetList,
-            nextTweetId: state.nextTweetId + 1
-        }));
+    const addAction = (text) => {
+        tweetList.addTweet(new TweetDto(nextTweetId, text));
+        setNextTweetId(nextTweetId + 1);
+        setTweetList(new TweetList(tweetList.list));
     };
 
+    return (
+        <div id="stream">
+            <h1 id="stream-title">Home</h1>
+            <WriteTweet addTweetAction={addAction}/>
+            {Array.from(tweetList.list).flatMap(tweet =>
+                <Tweet tweet={tweet} likeAction={likeAction} deleteAction={deleteAction}/>)
+            }
+        </div>
+    );
 }
-
-Stream.propTypes = {
-    tweetList: propTypes.instanceOf(TweetList).isRequired,
-};
-
 
 export default Stream;
