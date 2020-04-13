@@ -3,22 +3,12 @@ import propTypes from "prop-types";
 import {TweetList} from "../dto/TweetList";
 import {TweetDto} from "../dto/TweetDto";
 import Tweet from "./Tweet";
-import {useState} from "react";
 import WriteTweet from "./WriteTweet";
-import {useEffect} from "react";
-import LocalStorageApi from "../Util/LocalStorageApi";
+import UseLocalStorage from "../Util/UseLocalStorage";
 
 function Stream(props) {
-    const [tweetList, setTweetList] = useState(new TweetList(props.tweetList.list));
-    const [nextTweetId, setNextTweetId] = useState(props.nextTweetId);
-
-    useEffect(() => {
-        LocalStorageApi.setAsJson("tweetList", tweetList);
-    }, [tweetList]);
-
-    useEffect(() => {
-        LocalStorageApi.setInt("nextTweetId", nextTweetId);
-    }, [nextTweetId]);
+    const [tweetList, setTweetList] = UseLocalStorage("tweetList", TweetList);
+    const [nextTweetId, setNextTweetId] = UseLocalStorage("nextTweetId", Number);
 
     const likeAction = (id) => {
         tweetList.getTweetById(id).likeOrUnlikeTweet();
@@ -46,10 +36,5 @@ function Stream(props) {
         </div>
     );
 }
-
-Stream.propTypes = {
-    tweetList: propTypes.instanceOf(TweetList).isRequired,
-    nextTweetId: propTypes.number.isRequired
-};
 
 export default Stream;

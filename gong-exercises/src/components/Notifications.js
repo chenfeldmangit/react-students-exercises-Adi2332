@@ -1,18 +1,13 @@
 import * as React from "react";
-import {useEffect, useState} from "react";
 import propTypes from "prop-types";
 import Notification from "./Notification";
-import LocalStorageApi from "../Util/LocalStorageApi";
 import {NotificationList} from "../dto/NotificationList";
+import UseLocalStorage from "../Util/UseLocalStorage";
 
 
 function Notifications(props) {
 
-    const [notificationList, setNotificationList] = useState(new NotificationList(props.notificationList.list));
-
-    useEffect(() => {
-        LocalStorageApi.setAsJson("notificationList", notificationList);
-    }, [notificationList]);
+    const [notificationList, setNotificationList] = UseLocalStorage("notificationList", NotificationList);
 
     return (
         <div id="notifications">
@@ -23,9 +18,5 @@ function Notifications(props) {
         </div>
     );
 }
-
-Notifications.propTypes = {
-    notificationList: propTypes.instanceOf(NotificationList).isRequired
-};
 
 export default Notifications;
