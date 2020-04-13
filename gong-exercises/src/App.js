@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './Style/scss/style.scss';
+import './Style/style.scss';
 import Profile from "./components/Profile";
 import EditProfile from "./components/EditProfile";
 import {ProfileDto} from "./dto/ProfileDto";
