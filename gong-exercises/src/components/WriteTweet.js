@@ -27,7 +27,7 @@ class WriteTweet extends React.Component {
                     <TweetAction icon={smile}/>
                     <TweetAction icon={addLocation}/>
                 </div>
-                <button className={"tweet-button" + (this.isDisabled() ? " disabled" : "")} onClick={this.addTweet}>
+                <button className={"tweet-button" + this.isDisabled()} onClick={this.addTweet}>
                     <label className="button-label">Tweet</label>
                 </button>
             </div>
@@ -39,7 +39,7 @@ class WriteTweet extends React.Component {
     };
 
     isDisabled = () => {
-        return this.state.textAreaVal.length < 3;
+        return this.state.textAreaVal.length < 3 ? " disabled" : "";
     };
 
     addTweet = () => {

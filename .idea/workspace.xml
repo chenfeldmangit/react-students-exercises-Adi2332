@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59acea2d-91f2-4d4d-bebe-dbbe998a7756" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gong-exercises/src/components/function/MenuFunc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/src/components/function/StreamFunc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/src/components/function/TweetFunc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/src/components/function/WriteTweetFunc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gong-exercises/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/components/Stream.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/components/Stream.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gong-exercises/src/components/Tweet.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/components/Tweet.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -259,10 +262,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="787" y="304" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585833778311" />
-    <state x="540" y="267" width="840" height="603" key="IDE.errors.dialog" timestamp="1586604129511">
+    <state x="540" y="267" width="840" height="603" key="IDE.errors.dialog" timestamp="1586768273998">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="540" y="267" key="IDE.errors.dialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586604129511" />
+    <state x="540" y="267" key="IDE.errors.dialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586768273998" />
     <state x="540" y="267" width="840" height="603" key="IDE.errors.dialog/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585835705739" />
     <state x="635" y="235" key="RollbackChangesDialog" timestamp="1586603088591">
       <screen x="0" y="0" width="1920" height="1040" />

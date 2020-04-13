@@ -21,8 +21,7 @@ class Stream extends React.Component {
                 <h1 id="stream-title">Home</h1>
                 <WriteTweet addTweetAction={this.addAction}/>
                 {Array.from(this.state.tweetList.list).flatMap(tweet =>
-                    <Tweet dataId={tweet.id} text={tweet.text} liked={tweet.like}
-                           likeAction={this.likeAction} deleteAction={this.deleteAction}/>)
+                    <Tweet tweet={tweet} likeAction={this.likeAction} deleteAction={this.deleteAction}/>)
                 }
             </div>
         );

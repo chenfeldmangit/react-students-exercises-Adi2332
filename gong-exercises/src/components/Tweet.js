@@ -6,24 +6,21 @@ import like from "../resources/like.svg";
 import comment from "../resources/comment.svg";
 import share from "../resources/share.svg";
 import bin from "../resources/bin.svg";
+import {TweetDto} from "../dto/TweetDto";
 
 
 class Tweet extends React.Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     render() {
-        return <div className="tweet" dataId={this.props.dataId}>
+        return <div className="tweet" dataid={this.props.tweet.id}>
             <div className="tweet-header">
                 <ProfileImg class="button-icon"/>
                 <p className="tweet-title">title</p>
             </div>
-            <p className="tweet-text">{this.props.text}</p>
+            <p className="tweet-text">{this.props.tweet.text}</p>
             <div className="post-attachment"/>
             <div className="tweet-actions">
-                <TweetAction icon={like} class={this.props.liked ? "liked" : ""} action={this.likeOrUnlike}/>
+                <TweetAction icon={like} class={this.props.tweet.like ? "liked" : ""} action={this.likeOrUnlike}/>
                 <TweetAction icon={comment}/>
                 <TweetAction icon={share}/>
                 <TweetAction icon={bin} action={this.delete}/>
@@ -32,18 +29,16 @@ class Tweet extends React.Component {
     }
 
     likeOrUnlike = () => {
-        this.props.likeAction(this.props.dataId);
+        this.props.likeAction(this.props.tweet.id);
     };
 
     delete = () => {
-        this.props.deleteAction(this.props.dataId);
+        this.props.deleteAction(this.props.tweet.id);
     };
 }
 
 Tweet.propTypes = {
-    text: propTypes.string.isRequired,
-    dataId: propTypes.number.isRequired,
-    liked: propTypes.bool,
+    tweet: propTypes.instanceOf(TweetDto).isRequired,
     likeAction: propTypes.func.isRequired,
     deleteAction: propTypes.func.isRequired
 };
