@@ -26,7 +26,7 @@ class Profile extends React.Component {
                     <div className="profile-header">
                         <img src={yoyogi} className="background-img" alt="background-img"/>
                         <ProfileImg/>
-                        <Link to="/edit">
+                        <Link to="/profile/edit">
                             <button className="edit-button">
                                 <label className="button-label">Edit Profile</label>
                             </button>

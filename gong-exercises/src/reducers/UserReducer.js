@@ -1,4 +1,7 @@
-const UserReducer = function (state = [], action) {
+const UserReducer = function (state = [{
+    currentUser: undefined,
+    user : {username: "adi", password: "pass"}
+}], action) {
     switch (action.type) {
         case "SIGN_UP":
             return [...state, action.user];

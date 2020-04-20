@@ -20,10 +20,11 @@ function App() {
             <div className="App">
                 <Menu/>
                 <Switch>
-                    <Route path="/" component={Stream} exact/>
+                    {/*<Route path="/" exact component={ () => <SignInOrUp sign="up"/>} />*/}
+                    <Route path="/" exact component={Stream} />
                     <Route path="/notifications" component={Notifications}/>
-                    <Route path="/profile" component={() => <Profile profile={profile}/>}/>
-                    <Route path="/edit" component={() =>
+                    <Route path="/profile" exact component={() => <Profile profile={profile}/>}/>
+                    <Route path="/profile/edit" component={() =>
                         <>
                             <Profile profile={profile}/>
                             <EditProfile profile={profile}/>
