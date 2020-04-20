@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Style/style.scss';
 import Profile from "./components/Profile";
 import EditProfile from "./components/EditProfile";
@@ -8,31 +8,31 @@ import Menu from "./components/Menu";
 import LoadMyApp from "./Util/LoadMyApp";
 import Notifications from "./components/Notifications";
 import UseLocalStorage from "./Util/UseLocalStorage";
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 LoadMyApp();
 
 function App() {
-    const [state, setState] = useState("stream");
-    const menuActions = {
-        loadNotifications: () => setState("notifications"),
-        loadProfile: () => setState("profile"),
-        loadStream: () => setState("stream")
-    };
-
     const [profile, setProfile] = UseLocalStorage("profile", ProfileDto);
 
     return (
-        <div className="App">
-            <Menu actions={menuActions}/>
-            {state === "stream" ? <Stream/>
-                : (state === "notifications" ? <Notifications/>
-                        : <Profile profile={profile} backAction={menuActions.loadStream} editAction={() => setState("edit")}/>
-                )
-            }
-            {state === "edit" ?
-                <EditProfile closeAction={menuActions.loadProfile} profile={profile} saveAction={menuActions.loadProfile}/> : <></>}
-            <div id="follow"/>
-        </div>
+        <BrowserRouter>
+            <div className="App">
+                <Menu/>
+                <Switch>
+                    <Route path="/" component={Stream} exact/>
+                    <Route path="/notifications" component={Notifications}/>
+                    <Route path="/profile" component={() => <Profile profile={profile}/>}/>
+                    <Route path="/edit" component={() =>
+                        <>
+                            <Profile profile={profile}/>
+                            <EditProfile profile={profile}/>
+                        </>
+                    }/>
+                </Switch>
+                <div id="follow"/>
+            </div>
+        </BrowserRouter>
     );
 }
 

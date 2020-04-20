@@ -6,6 +6,7 @@ import addPhoto from "../resources/addPhoto.svg"
 import ProfileImg from "./ProfileImg";
 import FormInput from "./FormInput";
 import {ProfileDto} from "../dto/ProfileDto";
+import {Link} from 'react-router-dom';
 
 class EditProfile extends React.Component {
 
@@ -22,13 +23,17 @@ class EditProfile extends React.Component {
         return <div className="dialog">
             <dialog open id="editProfile">
                 <div className="header">
-                    <button className="button" onClick={this.props.closeAction}>
-                        <object data={close} className="button-icon"/>
-                    </button>
+                    <Link to="/profile">
+                        <button className="button">
+                            <object data={close} className="button-icon"/>
+                        </button>
+                    </Link>
                     <h3>Edit Profile</h3>
-                    <button className="save-button" onClick={this.saveProfile}>
-                        <label className="button-label">Save</label>
-                    </button>
+                    <Link to="/profile">
+                        <button className="save-button" onClick={this.saveProfile}>
+                            <label className="button-label">Save</label>
+                        </button>
+                    </Link>
                 </div>
 
                 <form id="edit-profile-form" method="post" onSubmit={(event) => event.preventDefault()}>
@@ -43,9 +48,12 @@ class EditProfile extends React.Component {
                             <object data={addPhoto} className="edit-img"/>
                         </div>
                     </div>
-                    <FormInput id="name" maxLength={50} label="Name" value={this.props.profile.name} onChange={this.handleChange}/>
-                    <FormInput id="bio" maxLength={250} label="Bio" value={this.props.profile.bio} onChange={this.handleChange}/>
-                    <FormInput id="location" maxLength={100} label="Location" value={this.props.profile.location} onChange={this.handleChange}/>
+                    <FormInput id="name" maxLength={50} label="Name" value={this.props.profile.name}
+                               onChange={this.handleChange}/>
+                    <FormInput id="bio" maxLength={250} label="Bio" value={this.props.profile.bio}
+                               onChange={this.handleChange}/>
+                    <FormInput id="location" maxLength={100} label="Location" value={this.props.profile.location}
+                               onChange={this.handleChange}/>
                 </form>
 
             </dialog>
@@ -60,13 +68,10 @@ class EditProfile extends React.Component {
 
     saveProfile = () => {
         this.props.profile.update(this.state.name, this.state.bio, this.state.location);
-        this.props.saveAction(this.props.profile);
     };
 }
 
 EditProfile.propTypes = {
-    closeAction: propTypes.func.isRequired,
-    saveAction: propTypes.func.isRequired,
     profile: propTypes.instanceOf(ProfileDto).isRequired
 };
 

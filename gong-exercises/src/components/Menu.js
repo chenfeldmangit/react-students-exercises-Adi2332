@@ -8,7 +8,6 @@ import bookmark from "../resources/bookmark.svg";
 import list from "../resources/list.svg";
 import more from "../resources/more.svg";
 import * as React from "react";
-import propTypes from "prop-types";
 
 
 function Menu(props) {
@@ -16,25 +15,17 @@ function Menu(props) {
     return (
         <div id="menu">
             <object data={bird} className="menu-icon"/>
-            <MenuItem icon={home} label="Home" action={props.actions.loadStream}/>
+            <MenuItem icon={home} label="Home" to="/"/>
             <MenuItem icon={hashtag} label="Explore"/>
-            <MenuItem icon={bell} label="Notifications" action={props.actions.loadNotifications}/>
+            <MenuItem icon={bell} label="Notifications" to="/notifications"/>
             <MenuItem icon={mail} label="Messages"/>
             <MenuItem icon={bookmark} label="Bookmarks"/>
             <MenuItem icon={list} label="Lists"/>
-            <MenuItem label="Profile" isProfileButton={true} action={props.actions.loadProfile}/>
+            <MenuItem label="Profile" isProfileButton={true} to="/profile"/>
             <MenuItem icon={more} label="More"/>
             <MenuItem label="Tweet" isTweetButton={true}/>
         </div>
     );
 }
-
-Menu.propTypes = {
-    actions: propTypes.shape({
-        loadStream: propTypes.func.isRequired,
-        loadNotifications: propTypes.func.isRequired,
-        loadProfile: propTypes.func.isRequired
-    }).isRequired
-};
 
 export default Menu;

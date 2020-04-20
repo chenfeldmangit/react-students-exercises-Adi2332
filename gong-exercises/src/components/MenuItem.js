@@ -1,15 +1,18 @@
 import propTypes from 'prop-types';
 import * as React from "react";
 import ProfileImg from "./ProfileImg";
+import {Link} from 'react-router-dom';
 
 class MenuItem extends React.Component {
 
     render() {
         return (
-            <button className={this.getClass()} onClick={this.props.action}>
-                {this.getButtonIcon()}
-                <label className="button-label">{this.props.label}</label>
-            </button>
+            <Link to={this.props.to}>
+                <button className={this.getClass()}>
+                    {this.getButtonIcon()}
+                    <label className="button-label">{this.props.label}</label>
+                </button>
+            </Link>
         );
     }
 
@@ -31,14 +34,14 @@ MenuItem.propTypes = {
     icon: propTypes.string,
     isTweetButton: propTypes.bool,
     isProfileButton: propTypes.bool,
-    action: propTypes.func
+    to: propTypes.string
 };
 
 MenuItem.defaultProps = {
     isTweetButton: false,
     isProfileButton: false,
     icon: "",
-    action: () => {}
+    action: "/"
 };
 
 export default MenuItem;

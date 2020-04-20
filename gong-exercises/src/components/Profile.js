@@ -6,15 +6,16 @@ import joinOn from "../resources/joinOn.svg"
 import propTypes from "prop-types";
 import ProfileImg from "./ProfileImg";
 import {ProfileDto} from "../dto/ProfileDto";
+import {Link} from "react-router-dom";
 
 class Profile extends React.Component {
 
     render() {
         return (<div id="profilePage">
                 <div className="profile-header">
-                    <button className="button" onClick={this.props.backAction}>
-                        <object data={leftArrow} className="button-icon"/>
-                    </button>
+                    <Link className="button" to="/">
+                            <object data={leftArrow}/>
+                    </Link>
                     <div>
                         <h1 id="profileTitle">{this.props.profile.name}</h1>
                         <p id="tweetNumber">{this.props.profile.tweetsNumber + " Tweets"}</p>
@@ -25,9 +26,11 @@ class Profile extends React.Component {
                     <div className="profile-header">
                         <img src={yoyogi} className="background-img" alt="background-img"/>
                         <ProfileImg/>
-                        <button className="edit-button" onClick={this.props.editAction}>
-                            <label className="button-label">Edit Profile</label>
-                        </button>
+                        <Link to="/edit">
+                            <button className="edit-button">
+                                <label className="button-label">Edit Profile</label>
+                            </button>
+                        </Link>
                     </div>
                     <h3 id="profileName">{this.props.profile.name}</h3>
                     <p id="bio">{this.props.profile.bio}</p>
@@ -55,8 +58,6 @@ class Profile extends React.Component {
 }
 
 Profile.propTypes = {
-    backAction: propTypes.func.isRequired,
-    editAction: propTypes.func.isRequired,
     profile: propTypes.instanceOf(ProfileDto).isRequired
 };
 

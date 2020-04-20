@@ -351,8 +351,8 @@ $font: "Comic Sans MS", serif;
     align-items: center;
 
     .button {
-      height: 10%;
-      width: 5%;
+      height: 100%;
+      width: 3%;
       padding: 1%;
       border-radius: 3em;
       background: none;
@@ -467,9 +467,9 @@ $font: "Comic Sans MS", serif;
     align-items: center;
 
     .button {
-      height: 10%;
-      width: 5%;
-      padding: 1%;
+      height: 100%;
+      width: 100%;
+      padding: 10%;
       border-radius: 3em;
       background: none;
       border: none;
@@ -490,6 +490,7 @@ $font: "Comic Sans MS", serif;
       border-radius: 3em;
       background: none;
       right: 5%;
+      top: 10%;
 
       .button-label {
         font-family: $font;
