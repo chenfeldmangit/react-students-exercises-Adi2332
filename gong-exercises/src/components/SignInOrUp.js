@@ -17,15 +17,15 @@ function SignInOrUp(props) {
         setUser({...user, [event.target.id]: event.target.value});
     };
 
-    function getClassName() {
+    const getClassName = () => {
         return "sign-button" + (user.username.length === 0 || user.password.length === 0 ? " disabled" : "");
-    }
+    };
 
-    function ifUpElse(up, _else) {
+    const ifUpElse = (up, _else) => {
         if (sign === "up")
             return up;
         return _else;
-    }
+    };
 
     return (
         <div id="SignInOrUp">
