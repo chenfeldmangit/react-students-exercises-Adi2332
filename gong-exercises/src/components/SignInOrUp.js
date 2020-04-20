@@ -41,11 +41,12 @@ function SignInOrUp(props) {
                     <input type="password" id="password" value={user.password} onChange={handleChange}/>
                 </div>
 
-                <button className={getClassName()}onClick={ifUpElse(() => props.signUp(user), () => props.signIn(user))}>
+                <button className={getClassName()} onClick={ifUpElse(() => props.signUp(user), () => props.signIn(user))}>
                     <label className="button-label">{ifUpElse("Sign Up", "Log In")}</label>
                 </button>
             </form>
-            <Link className="link" onClick={() => setSign(ifUpElse("in", "up"))} to="">{ifUpElse("Log In", "Sign Up")}</Link>
+            <Link className="link" onClick={() => setSign(ifUpElse("in", "up"))}
+                  to="">{ifUpElse("Log In", "Sign Up")}</Link>
         </div>
     );
 }
