@@ -41,7 +41,7 @@ MenuItem.defaultProps = {
     isTweetButton: false,
     isProfileButton: false,
     icon: "",
-    action: "/"
+    to: "/"
 };
 
 export default MenuItem;

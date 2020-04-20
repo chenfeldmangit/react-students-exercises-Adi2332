@@ -48,12 +48,9 @@ class EditProfile extends React.Component {
                             <object data={addPhoto} className="edit-img"/>
                         </div>
                     </div>
-                    <FormInput id="name" maxLength={50} label="Name" value={this.props.profile.name}
-                               onChange={this.handleChange}/>
-                    <FormInput id="bio" maxLength={250} label="Bio" value={this.props.profile.bio}
-                               onChange={this.handleChange}/>
-                    <FormInput id="location" maxLength={100} label="Location" value={this.props.profile.location}
-                               onChange={this.handleChange}/>
+                    <FormInput id="name" maxLength={50} label="Name" value={this.props.profile.name} onChange={this.handleChange}/>
+                    <FormInput id="bio" maxLength={250} label="Bio" value={this.props.profile.bio} onChange={this.handleChange}/>
+                    <FormInput id="location" maxLength={100} label="Location" value={this.props.profile.location} onChange={this.handleChange}/>
                 </form>
 
             </dialog>
