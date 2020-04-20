@@ -1,12 +1,13 @@
-const UserReducer = function (state = [{
+const UserReducer = function (state = {
     currentUser: undefined,
-    user : {username: "adi", password: "pass"}
-}], action) {
+    users: {"adi": "pass"}
+}, action) {
     switch (action.type) {
         case "SIGN_UP":
-            return [...state, action.user];
+            return {...state, users:{...state.users, [action.user.username]:action.user.password}, currentUser: action.user.username};
         case "SIGN_IN":
-            return [...state, action.currentUser];
+            if (state.users[action.user.username] === action.user.password)
+                return {...state, currentUser: action.user.username};
         default:
             return state;
     }

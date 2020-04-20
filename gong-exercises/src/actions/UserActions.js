@@ -5,10 +5,10 @@ const signUp = (user) => {
     }
 };
 
-const signIn = (currentUser) => {
+const signIn = (user) => {
     return {
         type: "SIGN_IN",
-        currentUser
+        user
     }
 };
 

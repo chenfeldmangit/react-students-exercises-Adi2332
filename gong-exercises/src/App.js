@@ -9,32 +9,44 @@ import LoadMyApp from "./Util/LoadMyApp";
 import Notifications from "./components/Notifications";
 import UseLocalStorage from "./Util/UseLocalStorage";
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {connect} from "react-redux";
+import SignInOrUp from "./components/SignInOrUp";
 
 LoadMyApp();
 
-function App() {
+function App(props) {
     const [profile, setProfile] = UseLocalStorage("profile", ProfileDto);
 
     return (
         <BrowserRouter>
             <div className="App">
-                <Menu/>
-                <Switch>
-                    {/*<Route path="/" exact component={ () => <SignInOrUp sign="up"/>} />*/}
-                    <Route path="/" exact component={Stream} />
-                    <Route path="/notifications" component={Notifications}/>
-                    <Route path="/profile" exact component={() => <Profile profile={profile}/>}/>
-                    <Route path="/profile/edit" component={() =>
-                        <>
-                            <Profile profile={profile}/>
-                            <EditProfile profile={profile}/>
-                        </>
-                    }/>
-                </Switch>
-                <div id="follow"/>
+                {props.currentUser === undefined ? <SignInOrUp sign="in"/> :
+                    <>
+                        <Menu/>
+                        <Switch>
+                            <Route path="/" exact component={Stream}/>
+                            <Route path="/notifications" component={Notifications}/>
+                            <Route path="/profile" exact component={() => <Profile profile={profile}/>}/>
+                            <Route path="/profile/edit" component={() =>
+                                <>
+                                    <Profile profile={profile}/>
+                                    <EditProfile profile={profile}/>
+                                </>
+                            }/>
+                        </Switch>
+                        <div id="follow"/>
+                    </>
+                }
             </div>
         </BrowserRouter>
     );
 }
 
-export default App;
+const mapStateToProps = (store) => {
+    return {
+        currentUser: store.currentUser,
+        users: store.users
+    }
+};
+
+export default connect(mapStateToProps)(App);

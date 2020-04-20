@@ -2,21 +2,23 @@ import * as React from "react";
 import {useState} from "react";
 import bird from "../resources/bird.svg";
 import {Link} from "react-router-dom";
+import {connect} from "react-redux";
+import {signIn, signUp} from "../actions/UserActions";
 
 function SignInOrUp(props) {
 
     const [sign, setSign] = useState(props.sign);
-    const [state, setState] = useState({
+    const [user, setUser] = useState({
         username: "",
         password: ""
     });
 
     const handleChange = (event) => {
-        setState({...state, [event.target.id]: event.target.value});
+        setUser({...user, [event.target.id]: event.target.value});
     };
 
     function getClassName() {
-        return "sign-button" + (state.username.length === 0 || state.password.length === 0 ? " disabled" : "");
+        return "sign-button" + (user.username.length === 0 || user.password.length === 0 ? " disabled" : "");
     }
 
     return (
@@ -25,23 +27,35 @@ function SignInOrUp(props) {
             <form id="logInForm" method="post" onSubmit={(event) => event.preventDefault()}>
                 <div className="input">
                     <label htmlFor="username">Username</label>
-                    <input type="text" id="username" value={state.username} onInput={handleChange}/>
+                    <input type="text" id="username" value={user.username} onInput={handleChange}/>
                 </div>
 
                 <div className="input">
                     <label htmlFor="password">Password</label>
-                    <input type="password" id="password" value={state.password} onInput={handleChange}/>
+                    <input type="password" id="password" value={user.password} onInput={handleChange}/>
                 </div>
 
-                <button className={getClassName()}>
+                <button className={getClassName()} onClick={sign === "up" ? () => props.signUp(user) : () => props.signIn(user)}>
                     <label className="button-label">{sign === "up" ? "Sign Up" : "Log In"}</label>
                 </button>
             </form>
             <Link className="link" onClick={() => setSign(sign === "in" ? "up" : "in")} to="">{sign === "in" ? "Sign Up" : "Log In"}</Link>
         </div>
     );
-
-
 }
 
-export default SignInOrUp;
+const mapStateToProps = (store) => {
+    return {
+        currentUser: store.currentUser,
+        users: store.users
+    }
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        signUp: user => dispatch(signUp(user)),
+        signIn: user => dispatch(signIn(user))
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(SignInOrUp);

@@ -116,7 +116,7 @@ $font: "Comic Sans MS", serif;
       }
     }
 
-    .disabled{
+    .disabled {
       pointer-events: none;
       opacity: 0.65;
     }
@@ -655,15 +655,17 @@ $font: "Comic Sans MS", serif;
 #SignInOrUp {
   display: flex;
   flex-direction: column;
-  flex-grow: 4;
+  width: 70%;
+  top: 5%;
+  left: 15%;
   border: 1px solid $border-color;
   margin: 0 1em 1em;
-  position: relative;
-  align-self: center;
+  position: absolute;
+
 
   #logInForm {
 
-    & > *{
+    & > * {
       position: relative;
       width: 60%;
       left: 20%;
@@ -705,13 +707,13 @@ $font: "Comic Sans MS", serif;
       }
     }
 
-    .disabled{
+    .disabled {
       pointer-events: none;
       opacity: 0.65;
     }
   }
 
-  .link{
+  .link {
     align-self: center;
     margin: 1%;
   }
