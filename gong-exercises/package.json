@@ -10,7 +10,9 @@
     "prop-types": "latest",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "redux": "latest",
+    "react-redux": "latest"
   },
   "scripts": {
     "start": "react-scripts start",

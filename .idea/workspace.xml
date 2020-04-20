@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59acea2d-91f2-4d4d-bebe-dbbe998a7756" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gong-exercises/src/actions/UserActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/src/reducers/UserReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/src/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/components/Stream.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/components/Stream.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -356,11 +362,11 @@
     </state>
     <state x="478" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586786999299" />
     <state x="478" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585837699926" />
-    <state x="337" y="110" width="1342" height="870" key="find.popup" timestamp="1586781571989">
+    <state x="336" y="110" width="1342" height="870" key="find.popup" timestamp="1587371859873">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="337" y="110" width="1342" height="870" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586781571989" />
-    <state x="336" y="110" width="1342" height="870" key="find.popup/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585838689978" />
+    <state x="336" y="110" width="1342" height="870" key="find.popup/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587371859873" />
     <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1586781317934">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -31,7 +31,7 @@ function Stream(props) {
             <h1 id="stream-title">Home</h1>
             <WriteTweet addTweetAction={addAction}/>
             {Array.from(tweetList.list).flatMap(tweet =>
-                <Tweet tweet={tweet} likeAction={likeAction} deleteAction={deleteAction}/>)
+                <Tweet key={tweet.id} tweet={tweet} likeAction={likeAction} deleteAction={deleteAction}/>)
             }
         </div>
     );
