@@ -1,5 +1,5 @@
 <?xml-stylesheet type="text/css" href="../Style/css/style.css"?>
-<svg class="icon-color" viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+<svg class="icon-color" style="fill:#800080" viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
     <path d="M486.4,59.733H25.6c-14.138,0-25.6,11.461-25.6,25.6v341.333c0,14.138,11.461,25.6,25.6,25.6h460.8
 				c14.138,0,25.6-11.461,25.6-25.6V85.333C512,71.195,500.539,59.733,486.4,59.733z M494.933,426.667
 				c0,4.713-3.82,8.533-8.533,8.533H25.6c-4.713,0-8.533-3.82-8.533-8.533V85.333c0-4.713,3.82-8.533,8.533-8.533h460.8
