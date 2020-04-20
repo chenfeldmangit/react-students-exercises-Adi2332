@@ -21,25 +21,31 @@ function SignInOrUp(props) {
         return "sign-button" + (user.username.length === 0 || user.password.length === 0 ? " disabled" : "");
     }
 
+    function ifUpElse(up, _else) {
+        if (sign === "up")
+            return up;
+        return _else;
+    }
+
     return (
         <div id="SignInOrUp">
             <object data={bird}/>
             <form id="logInForm" method="post" onSubmit={(event) => event.preventDefault()}>
                 <div className="input">
                     <label htmlFor="username">Username</label>
-                    <input type="text" id="username" value={user.username} onInput={handleChange}/>
+                    <input type="text" id="username" value={user.username} onChange={handleChange}/>
                 </div>
 
                 <div className="input">
                     <label htmlFor="password">Password</label>
-                    <input type="password" id="password" value={user.password} onInput={handleChange}/>
+                    <input type="password" id="password" value={user.password} onChange={handleChange}/>
                 </div>
 
-                <button className={getClassName()} onClick={sign === "up" ? () => props.signUp(user) : () => props.signIn(user)}>
-                    <label className="button-label">{sign === "up" ? "Sign Up" : "Log In"}</label>
+                <button className={getClassName()}onClick={ifUpElse(() => props.signUp(user), () => props.signIn(user))}>
+                    <label className="button-label">{ifUpElse("Sign Up", "Log In")}</label>
                 </button>
             </form>
-            <Link className="link" onClick={() => setSign(sign === "in" ? "up" : "in")} to="">{sign === "in" ? "Sign Up" : "Log In"}</Link>
+            <Link className="link" onClick={() => setSign(ifUpElse("in", "up"))} to="">{ifUpElse("Log In", "Sign Up")}</Link>
         </div>
     );
 }
