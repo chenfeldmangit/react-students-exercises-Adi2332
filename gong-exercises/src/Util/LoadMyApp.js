@@ -6,11 +6,6 @@ import {NotificationList} from "../dto/NotificationList";
 import {NotificationDto} from "../dto/NotificationDto";
 
 function LoadMyApp() {
-    LocalStorageApi.setAsJson("profile", new ProfileDto("Adi", 3, "Tel Aviv", "March 2020",
-        152, 2548, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, " +
-        "asperiores assumenda beatae cupiditate dolorem, ea esse fugiat iure mollitia odio odit pariatur perspiciatis " +
-        "possimus qui repellendus sapiente sunt velit."));
-
     LocalStorageApi.setAsJson("nextTweetId", 4);
 
     LocalStorageApi.setAsJson("notificationList", new NotificationList([

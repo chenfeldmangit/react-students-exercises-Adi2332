@@ -3,62 +3,66 @@ import leftArrow from "../resources/left-arrow.svg"
 import yoyogi from "../resources/yoyogi.jpg"
 import location from "../resources/location.svg"
 import joinOn from "../resources/joinOn.svg"
-import propTypes from "prop-types";
 import ProfileImg from "./ProfileImg";
-import {ProfileDto} from "../dto/ProfileDto";
 import {Link} from "react-router-dom";
+import {connect} from "react-redux";
 
-class Profile extends React.Component {
+function Profile(props) {
 
-    render() {
-        return (<div id="profilePage">
-                <div className="profile-header">
-                    <Link className="button" to="/">
-                            <object data={leftArrow}/>
-                    </Link>
-                    <div>
-                        <h1 id="profileTitle">{this.props.profile.name}</h1>
-                        <p id="tweetNumber">{this.props.profile.tweetsNumber + " Tweets"}</p>
-                    </div>
+
+    console.log(props.users, props.currentUser);
+    const profile = props.users[props.currentUser];
+
+    return (<div id="profilePage">
+            <div className="profile-header">
+                <Link className="button" to="/">
+                    <object data={leftArrow}/>
+                </Link>
+                <div>
+                    <h1 id="profileTitle">{profile.name}</h1>
+                    <p id="tweetNumber">{"3 Tweets"}</p>
                 </div>
-
-                <div id="profile">
-                    <div className="profile-header">
-                        <img src={yoyogi} className="background-img" alt="background-img"/>
-                        <ProfileImg/>
-                        <Link to="/profile/edit">
-                            <button className="edit-button">
-                                <label className="button-label">Edit Profile</label>
-                            </button>
-                        </Link>
-                    </div>
-                    <h3 id="profileName">{this.props.profile.name}</h3>
-                    <p id="bio">{this.props.profile.bio}</p>
-                    <div id="metadata">
-                        <div className="metadata">
-                            <object data={location}/>
-                            <label id="location">{this.props.profile.location}</label>
-                        </div>
-                        <div className="metadata">
-                            <object data={joinOn}/>
-                            <label id="joinOn">{this.props.profile.joinOn}</label>
-                        </div>
-                    </div>
-                    <div id="follow-metadata">
-                        <label className="metadata">
-                            <strong id="following">{this.props.profile.following}</strong> Following</label>
-                        <label className="metadata">
-                            <strong id="followers">{this.props.profile.followers}</strong> Followers</label>
-                    </div>
-                </div>
-
             </div>
-        );
-    }
+
+            <div id="profile">
+                <div className="profile-header">
+                    <img src={yoyogi} className="background-img" alt="background-img"/>
+                    <ProfileImg/>
+                    <Link to="/profile/edit">
+                        <button className="edit-button">
+                            <label className="button-label">Edit Profile</label>
+                        </button>
+                    </Link>
+                </div>
+                <h3 id="profileName">{profile.name}</h3>
+                <p id="bio">{profile.bio}</p>
+                <div id="metadata">
+                    <div className="metadata">
+                        <object data={location}/>
+                        <label id="location">{profile.location}</label>
+                    </div>
+                    <div className="metadata">
+                        <object data={joinOn}/>
+                        <label id="joinOn">{profile.joinOn}</label>
+                    </div>
+                </div>
+                <div id="follow-metadata">
+                    <label className="metadata">
+                        <strong id="following">{profile.following}</strong> Following</label>
+                    <label className="metadata">
+                        <strong id="followers">{profile.followers}</strong> Followers</label>
+                </div>
+            </div>
+
+        </div>
+    );
 }
 
-Profile.propTypes = {
-    profile: propTypes.instanceOf(ProfileDto).isRequired
+const mapStateToProps = (store) => {
+    return {
+        currentUser: store.user.currentUser,
+        users: store.user.users
+    }
 };
 
-export default Profile;
+export default connect(mapStateToProps)(Profile);

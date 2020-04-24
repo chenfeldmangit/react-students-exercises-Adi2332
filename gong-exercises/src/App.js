@@ -15,8 +15,6 @@ import SignInOrUp from "./components/SignInOrUp";
 LoadMyApp();
 
 function App(props) {
-    const [profile, setProfile] = UseLocalStorage("profile", ProfileDto);
-
     return (
         <BrowserRouter>
             <div className="App">
@@ -26,11 +24,11 @@ function App(props) {
                         <Switch>
                             <Route path="/" exact component={Stream}/>
                             <Route path="/notifications" component={Notifications}/>
-                            <Route path="/profile" exact component={() => <Profile profile={profile}/>}/>
+                            <Route path="/profile" exact component={Profile}/>}/>
                             <Route path="/profile/edit" component={() =>
                                 <>
-                                    <Profile profile={profile}/>
-                                    <EditProfile profile={profile}/>
+                                    <Profile/>
+                                    <EditProfile/>
                                 </>
                             }/>
                         </Switch>

@@ -5,21 +5,26 @@ import yoyogi from "../resources/yoyogi.jpg"
 import addPhoto from "../resources/addPhoto.svg"
 import ProfileImg from "./ProfileImg";
 import FormInput from "./FormInput";
-import {ProfileDto} from "../dto/ProfileDto";
 import {Link} from 'react-router-dom';
+import {connect} from "react-redux";
+import {addTweet, deleteTweet, likeTweet} from "../actions/TweetActions";
+import {editProfile} from "../actions/UserActions";
 
 class EditProfile extends React.Component {
 
     constructor(props) {
         super(props);
+        const profile = this.props.users[this.props.currentUser];
         this.state = {
-            name: this.props.profile.name,
-            bio: this.props.profile.bio,
-            location: this.props.profile.location
+            name: profile.name,
+            bio: profile.bio,
+            location: profile.location
         };
     }
 
     render() {
+        const profile = this.props.users[this.props.currentUser];
+
         return <div className="dialog">
             <dialog open id="editProfile">
                 <div className="header">
@@ -48,9 +53,9 @@ class EditProfile extends React.Component {
                             <object data={addPhoto} className="edit-img"/>
                         </div>
                     </div>
-                    <FormInput id="name" maxLength={50} label="Name" value={this.props.profile.name} onChange={this.handleChange}/>
-                    <FormInput id="bio" maxLength={250} label="Bio" value={this.props.profile.bio} onChange={this.handleChange}/>
-                    <FormInput id="location" maxLength={100} label="Location" value={this.props.profile.location} onChange={this.handleChange}/>
+                    <FormInput id="name" maxLength={50} label="Name" value={profile.name} onChange={this.handleChange}/>
+                    <FormInput id="bio" maxLength={250} label="Bio" value={profile.bio} onChange={this.handleChange}/>
+                    <FormInput id="location" maxLength={100} label="Location" value={profile.location} onChange={this.handleChange}/>
                 </form>
 
             </dialog>
@@ -64,12 +69,21 @@ class EditProfile extends React.Component {
     };
 
     saveProfile = () => {
-        this.props.profile.update(this.state.name, this.state.bio, this.state.location);
+        this.props.editProfile(this.state.name, this.state.location, this.state.bio);
     };
 }
 
-EditProfile.propTypes = {
-    profile: propTypes.instanceOf(ProfileDto).isRequired
+const mapStateToProps = (store) => {
+    return {
+        currentUser: store.user.currentUser,
+        users: store.user.users
+    }
 };
 
-export default EditProfile;
+const mapDispatchToProps = (dispatch) => {
+    return {
+        editProfile: (name, location, bio) => dispatch(editProfile(name, location, bio))
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(EditProfile);
