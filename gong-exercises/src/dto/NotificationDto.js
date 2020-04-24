@@ -1,5 +1,3 @@
-import {TweetDto} from "./TweetDto";
-
 export class NotificationDto {
     constructor(type, tweet) {
         this.type = type;
@@ -7,10 +5,6 @@ export class NotificationDto {
     }
 
     static fromJson(json) {
-        return new NotificationDto(json.type, json.tweet === undefined ? undefined : TweetDto.fromJson(json.tweet));
-    }
-
-    likeOrUnlikeTweet(){
-        this.like = !this.like;
+        return new NotificationDto(json.type, json.tweet === undefined ? undefined : json.tweet);
     }
 }

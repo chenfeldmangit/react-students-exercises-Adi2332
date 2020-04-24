@@ -6,7 +6,6 @@ import share from "../resources/share.svg";
 import bin from "../resources/bin.svg";
 import * as React from "react";
 import propTypes from "prop-types";
-import {TweetDto} from "../dto/TweetDto";
 
 
 function Tweet(props) {
