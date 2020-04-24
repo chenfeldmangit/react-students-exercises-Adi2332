@@ -1,9 +1,9 @@
 import * as React from "react";
 import propTypes from "prop-types";
-import {NotificationDto} from "../dto/NotificationDto";
 import ProfileImg from "./ProfileImg";
 import like from "../resources/like-full.svg"
 import follow from "../resources/follow.svg"
+import {connect} from "react-redux";
 
 function Notification(props) {
 
@@ -14,13 +14,19 @@ function Notification(props) {
                 <ProfileImg/>
             </div>
             <p className="notification-person"><strong>Adi </strong> {props.notification.type === "follow" ? " followed you" : "like your tweet"}</p>
-            <p className="notification-text"> {props.notification.type === "follow" ? "" : props.notification.tweet.text}</p>
+            <p className="notification-text"> {props.notification.type === "follow" ? "" : props.tweetList[props.notification.tweetId].text}</p>
         </div>
     );
 }
 
 Notification.propTypes = {
-    notification: propTypes.instanceOf(NotificationDto).isRequired
+    notification: propTypes.object.isRequired
 };
 
-export default Notification;
+const mapStateToProps = (store) => {
+    return {
+        ...store.tweetList
+    }
+};
+
+export default connect(mapStateToProps)(Notification);

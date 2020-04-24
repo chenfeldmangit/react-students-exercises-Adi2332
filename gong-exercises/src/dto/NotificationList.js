@@ -1,4 +1,3 @@
-import {NotificationDto} from "./NotificationDto";
 
 export class NotificationList {
     constructor(list) {
@@ -6,6 +5,6 @@ export class NotificationList {
     }
 
     static fromJson(json) {
-        return new NotificationList(json.list.map(tweet => NotificationDto.fromJson(tweet)));
+        return new NotificationList(json.list);
     }
 }
