@@ -14,21 +14,21 @@ function Tweet(props) {
     return <div className="tweet" dataid={props.tweet.id}>
         <div className="tweet-header">
             <ProfileImg class="button-icon"/>
-            <p className="tweet-title">title</p>
+            <p className="tweet-title">tweet id {props.tweet.id}</p>
         </div>
         <p className="tweet-text">{props.tweet.text}</p>
         <div className="post-attachment"/>
         <div className="tweet-actions">
-            <TweetAction icon={like} class={props.tweet.like ? "liked" : ""} action={() => props.likeAction(props.tweet.id)}/>
+            <TweetAction icon={like} class={props.tweet.like ? "liked" : ""} action={() => props.likeAction(props.tweet)}/>
             <TweetAction icon={comment}/>
             <TweetAction icon={share}/>
-            <TweetAction icon={bin} action={() => props.deleteAction(props.tweet.id)}/>
+            <TweetAction icon={bin} action={() => props.deleteAction(props.tweet)}/>
         </div>
     </div>;
 }
 
 Tweet.propTypes = {
-    tweet: propTypes.instanceOf(TweetDto).isRequired,
+    tweet: propTypes.object.isRequired,
     likeAction: propTypes.func.isRequired,
     deleteAction: propTypes.func.isRequired
 };

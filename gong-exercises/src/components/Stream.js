@@ -1,40 +1,41 @@
 import * as React from "react";
-import propTypes from "prop-types";
-import {TweetList} from "../dto/TweetList";
-import {TweetDto} from "../dto/TweetDto";
 import Tweet from "./Tweet";
 import WriteTweet from "./WriteTweet";
+import {connect} from "react-redux";
+import {addTweet, deleteTweet, likeTweet} from "../actions/TweetActions";
 import UseLocalStorage from "../Util/UseLocalStorage";
 
 function Stream(props) {
-    const [tweetList, setTweetList] = UseLocalStorage("tweetList", TweetList);
     const [nextTweetId, setNextTweetId] = UseLocalStorage("nextTweetId", Number);
 
-    const likeAction = (id) => {
-        tweetList.getTweetById(id).likeOrUnlikeTweet();
-        setTweetList(new TweetList(tweetList.list));
-    };
-
-    const deleteAction = (id) => {
-        tweetList.removeTweetById(id);
-        setTweetList(new TweetList(tweetList.list));
-    };
-
     const addAction = (text) => {
-        tweetList.addTweet(new TweetDto(nextTweetId, text));
         setNextTweetId(nextTweetId + 1);
-        setTweetList(new TweetList(tweetList.list));
+        props.addTweet({id: nextTweetId, text:text, like: false});
     };
 
     return (
         <div id="stream">
             <h1 id="stream-title">Home</h1>
             <WriteTweet addTweetAction={addAction}/>
-            {Array.from(tweetList.list).flatMap(tweet =>
-                <Tweet key={tweet.id} tweet={tweet} likeAction={likeAction} deleteAction={deleteAction}/>)
-            }
+            {Object.keys(props.tweetList).reverse().map(key =>
+                <Tweet key={key} tweet={props.tweetList[key]} likeAction={props.likeTweet} deleteAction={props.deleteTweet}/>
+            )}
         </div>
     );
 }
 
-export default Stream;
+const mapStateToProps = (store) => {
+    return {
+        ...store.tweetList
+    }
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addTweet: tweet => dispatch(addTweet(tweet)),
+        likeTweet: tweet => dispatch(likeTweet(tweet)),
+        deleteTweet: tweet => dispatch(deleteTweet(tweet))
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Stream);

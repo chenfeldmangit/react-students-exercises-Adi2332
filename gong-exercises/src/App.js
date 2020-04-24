@@ -44,8 +44,8 @@ function App(props) {
 
 const mapStateToProps = (store) => {
     return {
-        currentUser: store.currentUser,
-        users: store.users
+        currentUser: store.user.currentUser,
+        users: store.user.users
     }
 };
 
