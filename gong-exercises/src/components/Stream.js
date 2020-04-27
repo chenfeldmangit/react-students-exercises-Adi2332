@@ -17,8 +17,8 @@ function Stream(props) {
         <div id="stream">
             <h1 id="stream-title">Home</h1>
             <WriteTweet addTweetAction={addAction}/>
-            {Object.keys(props.tweetList).reverse().map(key =>
-                <Tweet key={key} tweet={props.tweetList[key]} likeAction={props.likeTweet} deleteAction={props.deleteTweet}/>
+            {[...props.tweetList].reverse().map(tweet =>
+                <Tweet key={tweet.id} tweet={tweet} likeAction={props.likeTweet} deleteAction={props.deleteTweet}/>
             )}
         </div>
     );
@@ -26,7 +26,7 @@ function Stream(props) {
 
 const mapStateToProps = (store) => {
     return {
-        ...store.tweetList
+        tweetList: store.tweetList
     }
 };
 

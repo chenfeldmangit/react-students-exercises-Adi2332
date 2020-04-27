@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="59acea2d-91f2-4d4d-bebe-dbbe998a7756" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/src/Util/LoadMyApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/Util/LoadMyApp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/src/components/Notification.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/components/Notification.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/src/dto/NotificationDto.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/src/dto/NotificationList.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/dto/NotificationList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/components/Stream.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/components/Stream.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/reducers/TweetReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/reducers/TweetReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
