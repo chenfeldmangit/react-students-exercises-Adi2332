@@ -18,7 +18,7 @@ class MenuItem extends React.Component {
 
     getButtonIcon() {
         return <>
-            {this.props.isTweetButton ? <></> :
+            {this.props.isTweetButton ? null :
                 (this.props.isProfileButton ?
                     <ProfileImg class="button-icon"/> : <object data={this.props.icon} className="button-icon"/>)}
         </>;

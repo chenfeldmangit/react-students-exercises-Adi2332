@@ -14,7 +14,8 @@ function Notification(props) {
                 <ProfileImg/>
             </div>
             <p className="notification-person"><strong>Adi </strong> {props.notification.type === "follow" ? " followed you" : "like your tweet"}</p>
-            <p className="notification-text"> {props.notification.type === "follow" ? "" : props.tweetList[props.notification.tweetId].text}</p>
+            <p className="notification-text"> {props.notification.type === "follow" ? "" :
+                props.tweetList.filter(tweet => tweet.id === props.notification.tweetId)[0].text}</p>
         </div>
     );
 }
@@ -23,9 +24,9 @@ Notification.propTypes = {
     notification: propTypes.object.isRequired
 };
 
-const mapStateToProps = (store) => {
+const mapStateToProps = (state) => {
     return {
-        ...store.tweetList
+        tweetList: state.tweetList
     }
 };
 
