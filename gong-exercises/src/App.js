@@ -38,10 +38,10 @@ function App(props) {
     );
 }
 
-const mapStateToProps = (store) => {
+const mapStateToProps = (state) => {
     return {
-        currentUser: store.user.currentUser,
-        users: store.user.users
+        currentUser: state.user.currentUser,
+        users: state.user.users
     }
 };
 

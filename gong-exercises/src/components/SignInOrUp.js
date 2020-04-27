@@ -50,10 +50,10 @@ function SignInOrUp(props) {
     );
 }
 
-const mapStateToProps = (store) => {
+const mapStateToProps = (state) => {
     return {
-        currentUser: store.currentUser,
-        users: store.users
+        currentUser: state.currentUser,
+        users: state.users
     }
 };
 

@@ -24,9 +24,9 @@ function Stream(props) {
     );
 }
 
-const mapStateToProps = (store) => {
+const mapStateToProps = (state) => {
     return {
-        tweetList: store.tweetList
+        tweetList: state.tweetList
     }
 };
 
