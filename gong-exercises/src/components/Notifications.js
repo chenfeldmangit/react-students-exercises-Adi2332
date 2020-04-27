@@ -10,9 +10,7 @@ function Notifications(props) {
     return (
         <div id="notifications">
             <h1 id="notifications-title">Notifications</h1>
-            {Array.from(notificationList).flatMap(notification =>
-                <Notification notification={notification}/>)
-            }
+            {Array.from(notificationList).flatMap(notification => <Notification notification={notification}/>)}
         </div>
     );
 }
