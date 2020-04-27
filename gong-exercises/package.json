@@ -10,10 +10,12 @@
     "prop-types": "latest",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-redux": "latest",
+    "react-router-dom": "latest",
     "react-scripts": "3.4.1",
     "redux": "latest",
-    "react-redux": "latest",
-    "react-router-dom": "latest"
+    "redux-devtools-extension": "^2.13.8",
+    "redux-saga": "^1.1.3"
   },
   "scripts": {
     "start": "react-scripts start",

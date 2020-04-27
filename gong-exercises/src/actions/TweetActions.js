@@ -1,5 +1,6 @@
 const ADD_TWEET = "ADD_TWEET";
 const LIKE_TWEET = "LIKE_TWEET";
+const LIKE_TWEET_REQUEST = "LIKE_TWEET_REQUEST";
 const DELETE_TWEET = "DELETE_TWEET";
 
 const addTweet = (tweet) => {
@@ -11,7 +12,7 @@ const addTweet = (tweet) => {
 
 const likeTweet = (tweet) => {
     return {
-        type: LIKE_TWEET,
+        type: LIKE_TWEET_REQUEST,
         tweet
     }
 };
@@ -23,4 +24,4 @@ const deleteTweet = (tweet) => {
     }
 };
 
-export {addTweet, likeTweet, deleteTweet, ADD_TWEET, LIKE_TWEET, DELETE_TWEET};
+export {addTweet, likeTweet, deleteTweet, ADD_TWEET, LIKE_TWEET, LIKE_TWEET_REQUEST, DELETE_TWEET};

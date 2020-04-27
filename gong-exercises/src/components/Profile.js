@@ -9,8 +9,6 @@ import {connect} from "react-redux";
 
 function Profile(props) {
 
-
-    console.log(props.users, props.currentUser);
     const profile = props.users[props.currentUser];
 
     return (<div id="profilePage">

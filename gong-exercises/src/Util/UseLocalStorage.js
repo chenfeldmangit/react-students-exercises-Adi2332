@@ -3,7 +3,7 @@ import {useState} from "react";
 
 function UseLocalStorage(key, type) {
 
-    const get = () => type === Number ? LocalStorageApi.getInt(key): LocalStorageApi.getInstantOfClass(key, type);
+    const get = () => type === Number ? LocalStorageApi.getInt(key): LocalStorageApi.getJson(key);
     const [obj, setObj] = useState(get);
 
     const set = val => {
