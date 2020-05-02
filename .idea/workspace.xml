@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59acea2d-91f2-4d4d-bebe-dbbe998a7756" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gong-exercises/src/Util/NotificationAPI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/src/actions/NotificationActions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gong-exercises/src/reducers/NotificationReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/public/bird.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/src/Style/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/Style/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/src/Util/LoadMyApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/Util/LoadMyApp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/src/Util/LocalStorageApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/Util/LocalStorageApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/src/components/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/components/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/src/components/MenuItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/components/MenuItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/src/components/Notifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/components/Notifications.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/src/saga.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/saga.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +38,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/gong-exercises/src/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gong-exercises/public" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -83,14 +74,7 @@
       <workItem from="1587368497498" duration="661000" />
       <workItem from="1587448589326" duration="17000" />
       <workItem from="1587714243339" duration="11582000" />
-      <workItem from="1588404096279" duration="3956000" />
-    </task>
-    <task id="LOCAL-00001" summary="start">
-      <created>1585817977645</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1585817977645</updated>
+      <workItem from="1588404096279" duration="4484000" />
     </task>
     <task id="LOCAL-00002" summary="start">
       <created>1585823436633</created>
@@ -428,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587985767118</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Notifications">
+      <created>1588408069857</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1588408069857</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,7 +438,6 @@
     <MESSAGE value="clean up" />
     <MESSAGE value="use LocalStorageApi" />
     <MESSAGE value="propTypes for func" />
-    <MESSAGE value="Notifications" />
     <MESSAGE value="start" />
     <MESSAGE value="Route" />
     <MESSAGE value="SignInOrUp.js" />
@@ -456,7 +446,8 @@
     <MESSAGE value="cleanup" />
     <MESSAGE value="like saga" />
     <MESSAGE value="add and delete saga" />
-    <option name="LAST_COMMIT_MESSAGE" value="add and delete saga" />
+    <MESSAGE value="Notifications" />
+    <option name="LAST_COMMIT_MESSAGE" value="Notifications" />
   </component>
   <component name="WindowStateProjectService">
     <state x="720" y="331" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586528578398">
@@ -467,10 +458,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587726274327" />
-    <state x="492" y="118" width="1355" height="837" key="CommitChangelistDialog2" timestamp="1587985766546">
+    <state x="509" y="25" width="1355" height="837" key="CommitChangelistDialog2" timestamp="1588408069466">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="492" y="118" width="1355" height="837" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587726072016" />
+    <state x="509" y="25" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588408069466" />
     <state x="492" y="118" width="1389" height="804" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587985766546" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1585829019729">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -501,32 +493,35 @@
     </state>
     <state x="540" y="267" key="IDE.errors.dialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586790040061" />
     <state x="540" y="267" width="840" height="603" key="IDE.errors.dialog/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585835705739" />
-    <state x="635" y="235" key="RollbackChangesDialog" timestamp="1587391393024">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2555" y="235" key="RollbackChangesDialog" timestamp="1588408562674">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="635" y="235" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586788013660" />
+    <state x="2555" y="235" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588408562674" />
     <state x="635" y="235" key="RollbackChangesDialog/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587391393024" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1587985768585">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2472" y="257" key="Vcs.Push.Dialog.v2" timestamp="1588408071965">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587726073692" />
+    <state x="2472" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588408071965" />
     <state x="552" y="257" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587985768585" />
-    <state x="540" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588405859276">
+    <state x="540" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588408579617">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="478" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587725562894" />
-    <state x="540" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588405859276" />
+    <state x="540" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588408579617" />
     <state x="478" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587981236236" />
-    <state x="408" y="68" width="1342" height="870" key="find.popup" timestamp="1588404818512">
+    <state x="408" y="68" width="1342" height="870" key="find.popup" timestamp="1588408275978">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="337" y="110" width="1342" height="870" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587726310598" />
-    <state x="408" y="68" width="1342" height="870" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588404818512" />
+    <state x="408" y="68" width="1342" height="870" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588408275978" />
     <state x="336" y="110" width="1342" height="870" key="find.popup/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587984925168" />
-    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1587980940815">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2536" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1588408242102">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586781317934" />
+    <state x="2536" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588408242102" />
     <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587980940815" />
   </component>
 </project>
