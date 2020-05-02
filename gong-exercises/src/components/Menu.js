@@ -8,6 +8,7 @@ import bookmark from "../resources/bookmark.svg";
 import list from "../resources/list.svg";
 import more from "../resources/more.svg";
 import * as React from "react";
+import {connect} from "react-redux";
 
 
 function Menu(props) {
@@ -17,7 +18,7 @@ function Menu(props) {
             <object data={bird} className="menu-icon"/>
             <MenuItem icon={home} label="Home" to="/"/>
             <MenuItem icon={hashtag} label="Explore"/>
-            <MenuItem icon={bell} label="Notifications" to="/notifications"/>
+            <MenuItem icon={bell} label="Notifications" to="/notifications" notificationNumber={props.notificationListLength}/>
             <MenuItem icon={mail} label="Messages"/>
             <MenuItem icon={bookmark} label="Bookmarks"/>
             <MenuItem icon={list} label="Lists"/>
@@ -28,4 +29,10 @@ function Menu(props) {
     );
 }
 
-export default Menu;
+const mapStateToProps = (state) => {
+    return {
+        notificationListLength: state.notificationList.length
+    }
+};
+
+export default connect(mapStateToProps)(Menu);

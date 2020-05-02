@@ -11,6 +11,8 @@ class MenuItem extends React.Component {
                 <button className={this.getClass()}>
                     {this.getButtonIcon()}
                     <label className="button-label">{this.props.label}</label>
+                    {this.props.notificationNumber === 0 ? null :
+                        <label className="button-label">{" (" + this.props.notificationNumber + ")"}</label>}
                 </button>
             </Link>
         );
@@ -34,14 +36,16 @@ MenuItem.propTypes = {
     icon: propTypes.string,
     isTweetButton: propTypes.bool,
     isProfileButton: propTypes.bool,
-    to: propTypes.string
+    to: propTypes.string,
+    notificationNumber: propTypes.number
 };
 
 MenuItem.defaultProps = {
     isTweetButton: false,
     isProfileButton: false,
     icon: "",
-    to: "/"
+    to: "/",
+    notificationNumber: 0
 };
 
 export default MenuItem;

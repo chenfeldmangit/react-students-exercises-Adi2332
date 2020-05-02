@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59acea2d-91f2-4d4d-bebe-dbbe998a7756" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gong-exercises/src/Util/NotificationAPI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/src/actions/NotificationActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gong-exercises/src/reducers/NotificationReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/src/Util/TweetApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/Util/TweetApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gong-exercises/src/actions/TweetActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/actions/TweetActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/Style/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/Style/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/Util/LoadMyApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/Util/LoadMyApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/Util/LocalStorageApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/Util/LocalStorageApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/components/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/components/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/components/MenuItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/components/MenuItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gong-exercises/src/components/Notifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/components/Notifications.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gong-exercises/src/saga.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/saga.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gong-exercises/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/gong-exercises/src/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +83,7 @@
       <workItem from="1587368497498" duration="661000" />
       <workItem from="1587448589326" duration="17000" />
       <workItem from="1587714243339" duration="11582000" />
+      <workItem from="1588404096279" duration="3956000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1585817977645</created>
@@ -413,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587984952518</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="add and delete saga">
+      <created>1587985767118</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1587985767118</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,7 +455,8 @@
     <MESSAGE value="profile in redux" />
     <MESSAGE value="cleanup" />
     <MESSAGE value="like saga" />
-    <option name="LAST_COMMIT_MESSAGE" value="like saga" />
+    <MESSAGE value="add and delete saga" />
+    <option name="LAST_COMMIT_MESSAGE" value="add and delete saga" />
   </component>
   <component name="WindowStateProjectService">
     <state x="720" y="331" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586528578398">
@@ -451,11 +467,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587726274327" />
-    <state x="492" y="118" width="1355" height="837" key="CommitChangelistDialog2" timestamp="1587984951768">
+    <state x="492" y="118" width="1355" height="837" key="CommitChangelistDialog2" timestamp="1587985766546">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="492" y="118" width="1355" height="837" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587726072016" />
-    <state x="492" y="118" width="1389" height="804" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587984951768" />
+    <state x="492" y="118" width="1389" height="804" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587985766546" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1585829019729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -464,22 +480,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="787" y="304" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1585833778311" />
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1587978478279">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1587993685031">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587978478279" />
-    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1587978478278">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587993685031" />
+    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1587993685030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587978478278" />
-    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1587978478278">
+    <state width="1877" height="274" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587993685030" />
+    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1587993685030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587978478278" />
-    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1587978478278">
+    <state width="1877" height="274" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587993685030" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1587993685030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587978478278" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587993685030" />
     <state x="540" y="267" width="840" height="603" key="IDE.errors.dialog" timestamp="1586790040061">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -490,20 +506,22 @@
     </state>
     <state x="635" y="235" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586788013660" />
     <state x="635" y="235" key="RollbackChangesDialog/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587391393024" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1587984953730">
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1587985768585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587726073692" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587984953730" />
-    <state x="478" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587981236236">
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587985768585" />
+    <state x="540" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588405859276">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="478" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587725562894" />
+    <state x="540" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588405859276" />
     <state x="478" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587981236236" />
-    <state x="336" y="110" width="1342" height="870" key="find.popup" timestamp="1587984925168">
+    <state x="408" y="68" width="1342" height="870" key="find.popup" timestamp="1588404818512">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="337" y="110" width="1342" height="870" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1587726310598" />
+    <state x="408" y="68" width="1342" height="870" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588404818512" />
     <state x="336" y="110" width="1342" height="870" key="find.popup/1920.0.1920.1040/0.0.1920.1040/3840.0.1280.680@0.0.1920.1040" timestamp="1587984925168" />
     <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1587980940815">
       <screen x="0" y="0" width="1920" height="1040" />

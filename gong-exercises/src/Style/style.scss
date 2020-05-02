@@ -229,6 +229,7 @@ $font: "Comic Sans MS", serif;
     .button-label {
       font-family: $font;
       font-size: 90%;
+      white-space: pre;
     }
 
     .button-icon {

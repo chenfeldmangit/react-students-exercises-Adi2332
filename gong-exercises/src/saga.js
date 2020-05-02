@@ -1,13 +1,8 @@
 import { put, call, takeEvery, all} from 'redux-saga/effects';
-import {
-    ADD_TWEET,
-    ADD_TWEET_REQUEST,
-    DELETE_TWEET,
-    DELETE_TWEET_REQUEST,
-    LIKE_TWEET,
-    LIKE_TWEET_REQUEST
-} from "./actions/TweetActions";
+import { ADD_TWEET, ADD_TWEET_REQUEST, DELETE_TWEET, DELETE_TWEET_REQUEST, LIKE_TWEET, LIKE_TWEET_REQUEST} from "./actions/TweetActions";
 import TweetAPI from "./Util/TweetApi";
+import NotificationAPI from "./Util/NotificationAPI";
+import {DELETE_NOTIFICATION, LIKE_NOTIFICATION} from "./actions/NotificationActions";
 
 
 function* likeTweet(action) {
@@ -20,8 +15,21 @@ function* likeTweet(action) {
     }
 }
 
+function* addNotification(action) {
+    try {
+        const success = yield call(NotificationAPI.likeNotification, action.tweet.id);
+        if (success) {
+            yield put({type: LIKE_NOTIFICATION, tweetId: action.tweet.id});
+        }
+    }
+    catch (err) {
+        console.log(`notification like tweet error ${err}`);
+    }
+}
+
 function* waitForLikeTweet() {
     yield takeEvery(LIKE_TWEET_REQUEST, likeTweet);
+    yield takeEvery(LIKE_TWEET_REQUEST, addNotification);
 }
 
 
@@ -49,8 +57,19 @@ function* deleteTweet(action) {
     }
 }
 
+function* deleteNotification(action) {
+    try {
+        yield call(NotificationAPI.deleteNotification, action.tweet.id);
+        yield put({type: DELETE_NOTIFICATION, tweetId:action.tweet.id});
+    }
+    catch (err) {
+        console.log(`notification delete tweet error ${err}`);
+    }
+}
+
 function* waitForDeleteTweet() {
     yield takeEvery(DELETE_TWEET_REQUEST, deleteTweet);
+    yield takeEvery(DELETE_TWEET_REQUEST, deleteNotification);
 }
 
 export default function* rootSaga() {
