@@ -9,6 +9,7 @@ import Notifications from "./components/Notifications";
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import {connect} from "react-redux";
 import SignInOrUp from "./components/SignInOrUp";
+import ErrorMessage from "./components/ErrorMessage";
 
 LoadMyApp();
 
@@ -19,20 +20,22 @@ function App(props) {
                 {props.currentUser === undefined ? <SignInOrUp sign="in"/> :
                     <>
                         <Menu/>
-                        <Switch>
-                            <Route path="/" exact component={Stream}/>
-                            <Route path="/notifications" component={Notifications}/>
-                            <Route path="/profile" exact component={Profile}/>}/>
-                            <Route path="/profile/edit" component={() =>
-                                <>
-                                    <Profile/>
-                                    <EditProfile/>
-                                </>
-                            }/>
-                        </Switch>
+                            <Switch>
+                                <Route path="/" exact component={Stream}/>
+                                <Route path="/notifications" component={Notifications}/>
+                                <Route path="/profile" exact component={Profile}/>}/>
+                                <Route path="/profile/edit" component={() =>
+                                    <>
+                                        <Profile/>
+                                        <EditProfile/>
+                                    </>
+                                }/>
+                            </Switch>
+
                         <div id="follow"/>
                     </>
                 }
+                {props.errorMessage !== undefined ? <ErrorMessage/> : null }
             </div>
         </BrowserRouter>
     );
@@ -41,7 +44,7 @@ function App(props) {
 const mapStateToProps = (state) => {
     return {
         currentUser: state.user.currentUser,
-        users: state.user.users
+        errorMessage: state.errorMessage.msg
     }
 };
 

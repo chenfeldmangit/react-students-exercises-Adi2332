@@ -13,6 +13,7 @@ import {DELETE_NOTIFICATION, LIKE_NOTIFICATION, SET_NOTIFICATIONS} from "./actio
 import {SIGN_IN, SIGN_IN_REQUEST} from "./actions/UserActions";
 import UserAPI from "./Util/UserAPI";
 import LocalStorageApi from "./Util/LocalStorageApi";
+import {SHOW_ERROR} from "./actions/ErreMessageActions";
 
 
 function* likeTweet(action) {
@@ -83,6 +84,7 @@ function* signIn(action) {
         const success = yield call(UserAPI.signIn, users, action.user.username, action.user.password);
         if (success)
             yield put({type: SIGN_IN, user: action.user});
+        yield put({type: SHOW_ERROR, msg:'The username or password you entered did not match our records.'})
     } catch (err) {
         console.log(`sign in error ${err}`);
     }

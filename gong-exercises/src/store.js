@@ -5,11 +5,13 @@ import createSagaMiddleware from "redux-saga";
 import {composeWithDevTools} from "redux-devtools-extension";
 import rootSaga from "./saga";
 import NotificationReducer from "./reducers/NotificationReducer";
+import ErrorMessageReducer from "./reducers/ErrorMessageReducer";
 
 const combinedReducers = combineReducers({
     tweetList: TweetReducer,
     user: UserReducer,
-    notificationList: NotificationReducer
+    notificationList: NotificationReducer,
+    errorMessage: ErrorMessageReducer
 });
 
 const sagaMiddleware = createSagaMiddleware();

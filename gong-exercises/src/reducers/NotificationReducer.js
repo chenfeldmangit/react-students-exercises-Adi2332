@@ -1,7 +1,6 @@
 import {DELETE_NOTIFICATION, LIKE_NOTIFICATION, SET_NOTIFICATIONS} from "../actions/NotificationActions";
 
 const NotificationReducer = function (state = [], action) {
-    debugger;
     switch (action.type) {
         case LIKE_NOTIFICATION:
             return [...state, {type:"like", tweetId:action.tweetId}];

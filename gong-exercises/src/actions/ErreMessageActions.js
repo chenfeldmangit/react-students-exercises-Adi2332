@@ -1,0 +1,4 @@
+const SHOW_ERROR = "SHOW_ERROR";
+const HIDE_ERROR = "HIDE_ERROR";
+
+export {SHOW_ERROR, HIDE_ERROR};

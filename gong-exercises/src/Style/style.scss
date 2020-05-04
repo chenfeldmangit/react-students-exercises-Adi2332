@@ -203,6 +203,14 @@ $font: "Comic Sans MS", serif;
   }
 }
 
+#errorMessage {
+  position: absolute;
+  top: 40%;
+  width: 50%;
+  border: 2px solid $border-color;
+  border-radius: 2em;
+}
+
 #menu {
   display: flex;
   flex-direction: column;
