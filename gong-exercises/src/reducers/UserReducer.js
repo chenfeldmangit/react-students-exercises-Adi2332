@@ -1,21 +1,12 @@
 import {EDIT, SIGN_IN, SIGN_UP} from "../actions/UserActions";
+import LocalStorageApi from "../Util/LocalStorageApi";
 
 const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const bio = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid, asperiores assumenda beatae cupiditate dolorem, ea esse fugiat iure mollitia odio odit pariatur perspiciatis possimus qui repellendus sapiente sunt velit.";
 
 let init = {
     currentUser: undefined,
-    users: {
-        "Adi": {
-            name: "Adi",
-            password: "pass",
-            location: "Tel Aviv",
-            joinOn: "March 2020",
-            following: 152,
-            followers: 2548,
-            bio: bio
-        }
-    }
+    users: LocalStorageApi.getJson("users")
 };
 
 const UserReducer = function (state = init, action) {
@@ -35,9 +26,7 @@ const UserReducer = function (state = init, action) {
             return state;
 
         case SIGN_IN:
-            if (state.users[action.user.username] !== undefined && state.users[action.user.username].password === action.user.password)
-                return {...state, currentUser: action.user.username};
-            return state;
+            return {...state, currentUser: action.user.username};
 
         case EDIT:
             const user = {...state.users[state.currentUser], name: action.name, location: action.location, bio: action.bio};

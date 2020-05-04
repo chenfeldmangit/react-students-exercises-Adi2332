@@ -1,5 +1,6 @@
 const SIGN_UP = "SIGN_UP";
 const SIGN_IN = "SIGN_IN";
+const SIGN_IN_REQUEST = "SIGN_IN_REQUEST";
 const EDIT = "EDIT";
 
 const signUp = (user) => {
@@ -11,7 +12,7 @@ const signUp = (user) => {
 
 const signIn = (user) => {
     return {
-        type: SIGN_IN,
+        type: SIGN_IN_REQUEST,
         user
     }
 };
@@ -25,4 +26,4 @@ const editProfile = (name, location, bio) => {
     }
 };
 
-export {signUp, signIn, editProfile, SIGN_UP, SIGN_IN, EDIT};
+export {signUp, signIn, editProfile, SIGN_UP, SIGN_IN, SIGN_IN_REQUEST, EDIT};

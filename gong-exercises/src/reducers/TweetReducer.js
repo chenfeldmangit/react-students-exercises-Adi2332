@@ -1,9 +1,6 @@
-import {ADD_TWEET, DELETE_TWEET, LIKE_TWEET} from "../actions/TweetActions";
-import LocalStorageApi from "../Util/LocalStorageApi";
+import {ADD_TWEET, DELETE_TWEET, LIKE_TWEET, SET_TWEETS} from "../actions/TweetActions";
 
-const init = LocalStorageApi.getJson("tweetList");
-
-const TweetReducer = function (state = init, action) {
+const TweetReducer = function (state = [], action) {
     switch (action.type) {
         case ADD_TWEET:
             return [...state, action.tweet];
@@ -13,6 +10,9 @@ const TweetReducer = function (state = init, action) {
 
         case DELETE_TWEET:
             return state.filter(tweet => tweet.id !== action.tweet.id);
+
+        case SET_TWEETS:
+            return action.tweetList;
 
         default:
             return state;

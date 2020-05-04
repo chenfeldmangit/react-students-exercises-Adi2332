@@ -1,15 +1,16 @@
-import LocalStorageApi from "../Util/LocalStorageApi";
-import {DELETE_NOTIFICATION, LIKE_NOTIFICATION} from "../actions/NotificationActions";
+import {DELETE_NOTIFICATION, LIKE_NOTIFICATION, SET_NOTIFICATIONS} from "../actions/NotificationActions";
 
-const init = LocalStorageApi.getJson("notificationList");
-
-const NotificationReducer = function (state = init, action) {
+const NotificationReducer = function (state = [], action) {
+    debugger;
     switch (action.type) {
         case LIKE_NOTIFICATION:
             return [...state, {type:"like", tweetId:action.tweetId}];
 
         case DELETE_NOTIFICATION:
             return state.filter(notification => notification.tweetId !== action.tweetId);
+
+        case SET_NOTIFICATIONS:
+            return action.notificationList;
 
         default:
             return state;
